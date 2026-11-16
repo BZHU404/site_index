@@ -528,7 +528,7 @@
         if (wakeBtn) {
           wakeBtn.focus();
         }
-      }, 700);
+      }, 1100);
     }
 
     function closeEvent() {
