@@ -200,7 +200,7 @@
       root.classList.remove("jumpscare-hit");
       document.title = originalTitle;
       jumpTimer = null;
-    }, 1000);
+    }, 900);
   }
 
   function apply(next) {

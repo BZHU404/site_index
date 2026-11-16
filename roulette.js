@@ -306,7 +306,7 @@
       if (wake) {
         wake.focus();
       }
-    }, 1100);
+    }, 900);
   }
 
   function wakeSix() {

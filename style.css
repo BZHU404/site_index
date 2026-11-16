@@ -2986,7 +2986,7 @@ body.is-final .blood-layer { visibility: hidden; }
 }
 .jumpscare.is-active {
   visibility: visible;
-  animation: jumpscareFlash 0.95s steps(2) both;
+  animation: jumpscareFlash 0.9s steps(2) both;
 }
 .jumpscare-eye {
   width: min(92vw, 900px);
@@ -3171,7 +3171,7 @@ body.is-final .jumpscare { visibility: hidden; }
   opacity: 0;
 }
 .six-event.is-active .six-flash {
-  animation: sixFlash 1.1s steps(2) both;
+  animation: sixFlash 0.9s steps(2) both;
 }
 .six-event.show-panel .six-flash { display: none; }
 .six-flash img {
