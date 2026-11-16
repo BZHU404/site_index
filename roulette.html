@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian's Workshop — Devil's Roulette</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v26M3 16h26M6.8 6.8l18.4 18.4M25.2 6.8L6.8 25.2' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>
+try {
+  var savedTextSize = parseInt(localStorage.getItem("bw_textsize"), 10) || 0;
+  if (savedTextSize === 1 || savedTextSize === 2) {
+    document.documentElement.classList.add("textsize-" + savedTextSize);
+  }
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="mast-edge mast-edge-left">
+      <span>EST. 2026</span>
+      <span>REV. 2026.11</span>
+    </div>
+    <div class="mast-center">
+      <p class="mast-kicker">☆ A HAND-CODED PERSONAL HOMEPAGE ☆</p>
+      <p class="mast-title"><a href="home.html">Brian's Workshop</a></p>
+      <p class="mast-sub">— DIY · keyboards · audio · cocktails —</p>
+      <p class="mast-meta">HTML + CSS + A LITTLE JAVASCRIPT · NO FRAMEWORKS</p>
+    </div>
+    <div class="mast-edge mast-edge-right">
+      <span>PAGE 07</span>
+      <span>HAND-CODED</span>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Site news ticker">
+    <div class="ticker-track">
+      <span>★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+      <span aria-hidden="true">★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Primary">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+    <a href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+    <a href="music.html">Music</a>
+    <a href="roulette.html" aria-current="page">Game</a>
+  </nav>
+
+  <div class="layout has-rail">
+
+    <aside class="sidebar" aria-label="Site sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE NAV ·</h2>
+        <ul class="navlist">
+          <li><a href="home.html">» Home</a></li>
+          <li><a href="about.html">» About</a></li>
+          <li><a href="help.html">» Help</a></li>
+          <li><a class="hot" href="blog.html">» Weblog</a> <span class="new blink">NEW!</span></li>
+          <li><a href="music.html">» Music</a> <span class="new">BETA</span></li>
+          <li><a href="roulette.html" aria-current="page">» Game</a> <span class="new">NEW!</span></li>
+          <li><a href="write.html">» Writing desk</a> <span class="new">LOCAL</span></li>
+        </ul>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE STATS ·</h2>
+        <div class="stats">
+          <p class="stat-label">YOU ARE VISITOR</p>
+          <p class="counter" id="hitCount" title="Visitor counter">000000</p>
+          <p class="stat-row"><span>VISITS TODAY</span> <b id="todayCount">—</b></p>
+          <p class="stat-row"><span>DAYS ONLINE</span> <b id="daysOnline">—</b></p>
+          <p class="stat-row"><span>ONLINE SINCE</span> <b>2026.11.02</b></p>
+        </div>
+      </section>
+
+      <section class="sidebox textsize-box">
+        <h2 class="sidebox-title">· TEXT SIZE ·</h2>
+        <div class="textsize" role="group" aria-label="Text size">
+          <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+          <span class="textsize-value" aria-live="polite">100%</span>
+          <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· THIS SITE ·</h2>
+        <a class="badge88" href="home.html" aria-label="Brian's Workshop — home">
+          <span>BRIAN'S<br>WORKSHOP</span>
+          <small>EST. 2026</small>
+        </a>
+        <div class="badge-row">
+          <a class="mini-badge mb-netscape" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Netscape<br>Now!</a>
+          <span class="mini-badge mb-y2k">Y2K<br>Ready</span>
+        </div>
+        <div class="badge-row">
+          <span class="mini-badge mb-notepad">Made with<br>Notepad</span>
+          <button class="mini-badge mb-devil devil-badge" type="button" aria-label="Devil Site">Devil<br>Site</button>
+        </div>
+        <p class="tiny center">Hand-coded. No frameworks.</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· MY OTHER SITES ·</h2>
+        <div class="site-icons">
+          <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener" title="wood_map"><img src="assets/wood.png" alt="wood_map"></a>
+          <a href="https://BZHU404.github.io/chinamed_map" target="_blank" rel="noopener" title="chinamed_map"><img src="assets/chinamed.png" alt="chinamed_map"></a>
+          <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener" title="Poison_map"><img src="assets/poison.png" alt="Poison_map"></a>
+          <a href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Flower_map"><img src="assets/flower.svg" alt="Flower_map"></a>
+          <a href="https://BZHU404.github.io/lux_map" target="_blank" rel="noopener" title="lux_map"><img src="assets/lux.png" alt="lux_map"></a>
+          <a href="https://BZHU404.github.io/alcohol_map" target="_blank" rel="noopener" title="酒谱 alcohol_map" aria-label="酒谱 alcohol_map"><img src="assets/wine-logo.svg" alt="酒谱 — alcohol map logo"></a>
+          <a class="logo-tile" href="https://BZHU404.github.io/perfume_map/" target="_blank" rel="noopener" title="香谱 perfume_map" aria-label="香谱 perfume_map"><img src="assets/perfume-logo.webp" alt="香谱 — perfume map logo"></a>
+          <a class="site-icon-text" href="https://github.com/BZHU404" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GH</a>
+          <a class="site-icon-text" href="https://github.com/BZHU404?tab=repositories" target="_blank" rel="noopener" title="All repositories" aria-label="All repositories">★</a>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SUPPORT ·</h2>
+        <a class="support-mini" href="#support">
+          <img src="assets/coffee-cup.png" alt="A cup of coffee">
+          <span>Buy me<br>a coffee</span>
+        </a>
+        <p class="tiny center">本站永久免费</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· ADVERTISEMENT ·</h2>
+        <div class="ad-120">
+          <b>YOUR AD<br>HERE</b>
+          <span class="blink">CHEAP!</span>
+          <a href="https://github.com/BZHU404" target="_blank" rel="noopener">inquire »</a>
+        </div>
+      </section>
+
+      <p class="sidebar-note">This site looks best with a cup of coffee.</p>
+    </aside>
+
+        <main id="main" class="content">
+
+      <p class="crumb"><a href="home.html">HOME</a> <span class="sep">/</span> <span data-i18n="crumb">GAME</span></p>
+
+      <div class="pagehead game-head">
+        <div>
+          <h1><span data-i18n="title">Devil's Roulette</span> <span class="music-cn" data-i18n="titleSub">恶魔轮盘赌</span></h1>
+          <p class="page-sub" data-i18n="subtitle">Three lives each. One live round in six. The system is not your friend.</p>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Language / 语言">
+          <span class="lang-label">LANG</span>
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
+
+      <div class="game-warning-banner" role="note">
+        <b data-i18n="fictionTitle">FICTION ONLY / 纯属虚构</b>
+        <span data-i18n="fictionNote">这是一个文字游戏，现实中请勿模仿。</span>
+      </div>
+
+      <section class="game-table" aria-label="Devil's roulette game">
+        <div class="game-players">
+          <div class="player-card">
+            <h2 data-i18n="you">你 / You</h2>
+            <p class="hp" id="php"><span class="heart on">♥</span><span class="heart on">♥</span><span class="heart on">♥</span></p>
+            <p class="score"><span data-i18n="score">得分</span> <b id="pscore">0</b></p>
+          </div>
+          <div class="game-vs">VS</div>
+          <div class="player-card">
+            <h2 data-i18n="system">系统 / System</h2>
+            <p class="hp" id="ahp"><span class="heart on">♥</span><span class="heart on">♥</span><span class="heart on">♥</span></p>
+            <p class="score"><span data-i18n="score">得分</span> <b id="ascore">0</b></p>
+          </div>
+        </div>
+
+        <div class="cylinder-wrap">
+          <span class="cylinder-label" data-i18n="cylinder">CYLINDER</span>
+          <div id="cylinder" class="cylinder" aria-hidden="true">
+            <span class="chamber"></span><span class="chamber"></span><span class="chamber"></span>
+            <span class="chamber"></span><span class="chamber"></span><span class="chamber"></span>
+          </div>
+        </div>
+
+        <div class="game-readout">
+          <p class="game-msg" id="msg" aria-live="polite">新的一局，弹巢已装填。轮到你了。</p>
+          <p class="game-turn"><b id="turn">● 轮到你了</b> <span>｜</span> <span data-i18n="chambersLeft">弹巢剩余</span> <b id="left">6</b> <span data-i18n="chambersUnit">格</span></p>
+        </div>
+
+        <div class="game-actions">
+          <button class="btn game-btn" type="button" id="btnShoot" data-i18n="shootSelf">对自己扣扳机</button>
+          <button class="btn game-btn" type="button" id="btnShootAI" data-i18n="shootAI">冲系统开枪</button>
+          <button class="btn game-btn" type="button" id="btnPass" disabled data-i18n="passGun">把枪交给系统</button>
+          <button class="btn game-btn" type="button" id="btnReset" data-i18n="newRound">重新开始</button>
+        </div>
+
+        <p class="game-warning" data-i18n="warning">纯属虚构的文字游戏，现实中请勿模仿。</p>
+      </section>
+
+      <section class="ad-block" aria-label="Advertisement">
+        <span class="ad-label">· ADVERTISEMENT ·</span>
+        <a class="ad-468" href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">
+          <span class="ad-468-thumbs">
+            <img src="assets/wood.png" alt="">
+            <img src="assets/poison.png" alt="">
+            <img src="assets/flower.svg" alt="">
+          </span>
+          <span class="ad-468-copy">
+            <b>The Map Room</b>
+            <small>Seven hand-made maps. Zero algorithms. No cookies.</small>
+          </span>
+          <span class="ad-468-cta flash">Visit!</span>
+        </a>
+      </section>
+
+      <section class="support" id="support">
+        <h2 class="support-title">· Support this site · 支持本站 ·</h2>
+        <div class="support-grid">
+          <div class="support-qr">
+            <a href="assets/coffee-qr.png" target="_blank" rel="noopener" title="Open the coffee QR code">
+              <img src="assets/coffee-qr.png" alt="Coffee QR code — scan to support the site">
+            </a>
+            <span>Scan / click to enlarge</span>
+          </div>
+          <div class="support-copy">
+            <h3>Buy me a coffee</h3>
+            <p>本站永久免费。如果这里的东西对你有用，请我喝一杯咖啡。</p>
+            <p class="support-small">Every cup becomes domain renewals, solder, and another bad idea.</p>
+            <a class="btn btn-small" href="assets/coffee-qr.png" target="_blank" rel="noopener">Open the QR code</a>
+          </div>
+          <div class="support-cup">
+            <img src="assets/coffee-cup.png" alt="A cup of coffee">
+            <span>Thanks</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="webring" id="webring" aria-label="Webring">
+        <span class="webring-title">· The Tinkerer's Webring ·</span>
+        <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">&laquo; prev</a>
+        <span class="sep">|</span>
+        <a id="randomSite" href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Random map site">random</a>
+        <span class="sep">|</span>
+        <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener">next &raquo;</a>
+      </nav>
+
+      <p class="page-end"><span class="dot">■</span> <a href="#main">Back to top</a> <span class="dot">■</span></p>
+
+    </main>
+
+        <aside class="rail" aria-label="Game sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title" data-i18n="rulesTitle">· RULES ·</h2>
+        <p class="tiny" data-i18n="rule1">双方各 3 点生命，先归零者输。</p>
+        <p class="tiny" data-i18n="rule2">轮到谁，谁选择：打自己，还是打对面。</p>
+        <p class="tiny" data-i18n="rule3">打自己：空枪 +10 继续；实弹 -1，把枪交给对方。打对面：无论中不中，下一枪交给对方；实弹后重新装填。</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title" data-i18n="houseTitle">· HOUSE RULES ·</h2>
+        <p class="tiny" data-i18n="house1">得分只作记录，生命归零即分胜负。</p>
+        <p class="tiny" data-i18n="house2">The system is not your friend.</p>
+      </section>
+
+      <p class="rail-note"><a class="secret-link" href="tape-00.html" rel="nofollow"><span data-i18n="luck">Luck is not a strategy.</span></a></p>
+    </aside>
+
+  </div>
+
+  <footer class="sitefooter">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="blog.html">Weblog</a>
+      <a href="music.html">Music</a>
+      <a href="roulette.html">Game</a>
+      <a href="write.html">Writing desk</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="footer-sponsor">Brought to you by <b>coffee</b> and <b>bad ideas</b> · <a href="#support">Buy me a coffee</a></p>
+    <p class="footer-line">LAST UPDATED: 2026.11.12 &nbsp;|&nbsp; BEST VIEWED: NETSCAPE NAVIGATOR 3.0 / 1024 × 768</p>
+    <p class="footer-fine">Copyright © 2026 Brian. All Rights Reserved. 本页面由 Notepad 手工编写。<br>
+    <span class="construction blink">▲ 本站建设中 ▲</span></p>
+  </footer>
+
+</div>
+
+<section class="six-event" id="sixEvent" role="alertdialog" aria-modal="true" aria-label="SIX" aria-hidden="true">
+  <div class="six-flash" aria-hidden="true">
+    <img src="assets/goth-eye.gif" alt="">
+  </div>
+  <div class="six-panel">
+    <img class="six-eye" src="assets/the-creepy-eye-cutout.png" alt="">
+    <p class="six-text">YOU SHOULDN'T HAVE DONE THAT.</p>
+    <p class="six-sub">It was never your turn.</p>
+    <p class="six-coda">you dance with the devil</p>
+    <p class="six-coda">you never dance again</p>
+    <button class="six-wake" id="sixWake" type="button" data-i18n="sixWake">WAKE UP</button>
+  </div>
+</section>
+
+<script src="roulette.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

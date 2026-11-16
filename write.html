@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian's Workshop — 写作台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v26M3 16h26M6.8 6.8l18.4 18.4M25.2 6.8L6.8 25.2' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>
+try {
+  var savedTextSize = parseInt(localStorage.getItem("bw_textsize"), 10) || 0;
+  if (savedTextSize === 1 || savedTextSize === 2) {
+    document.documentElement.classList.add("textsize-" + savedTextSize);
+  }
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="mast-edge mast-edge-left">
+      <span>EST. 2026</span>
+      <span>REV. 2026.11</span>
+    </div>
+    <div class="mast-center">
+      <p class="mast-kicker">☆ A HAND-CODED PERSONAL HOMEPAGE ☆</p>
+      <p class="mast-title"><a href="home.html">Brian's Workshop</a></p>
+      <p class="mast-sub">— DIY · keyboards · audio · cocktails —</p>
+      <p class="mast-meta">HTML + CSS + A LITTLE JAVASCRIPT · NO FRAMEWORKS</p>
+    </div>
+    <div class="mast-edge mast-edge-right">
+      <span>写作台</span>
+      <span>仅本机</span>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Site news ticker">
+    <div class="ticker-track">
+      <span>★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+      <span aria-hidden="true">★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Primary">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+    <a href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+    <a href="music.html">Music</a>
+    <a href="roulette.html">Game</a>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Site sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE NAV ·</h2>
+        <ul class="navlist">
+          <li><a href="home.html">» Home</a></li>
+          <li><a href="about.html">» About</a></li>
+          <li><a href="help.html">» Help</a></li>
+          <li><a class="hot" href="blog.html">» Weblog</a> <span class="new blink">NEW!</span></li>
+          <li><a href="music.html">» Music</a> <span class="new">BETA</span></li>
+          <li><a href="roulette.html">» Game</a> <span class="new">NEW!</span></li>
+          <li><a href="write.html" aria-current="page">» Writing desk</a></li>
+        </ul>
+      </section>
+
+      <section class="sidebox textsize-box">
+        <h2 class="sidebox-title">· TEXT SIZE ·</h2>
+        <div class="textsize" role="group" aria-label="Text size">
+          <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+          <span class="textsize-value" aria-live="polite">100%</span>
+          <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· 本页说明 ·</h2>
+        <p class="tiny">一个给这个博客用的纯文本编辑器。内容不会发送到任何地方，文章会留在这个浏览器里，直到你导出。</p>
+        <p class="tiny"><b>快捷键：</b><br>Ctrl / ⌘ + S — 保存</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· MARKDOWN 语法 ·</h2>
+        <ul class="navlist navlist-small">
+          <li><code>**bold**</code></li>
+          <li><code>*italic*</code></li>
+          <li><code>## heading</code></li>
+          <li><code>- list item</code></li>
+          <li><code>[text](url)</code></li>
+          <li><code>&gt; quote</code></li>
+        </ul>
+      </section>
+
+      <p class="sidebar-note">没有云，也没有找不到的草稿文件夹。只有一个文本框。</p>
+    </aside>
+
+    <main id="main" class="content">
+
+      <p class="crumb"><a href="home.html">首页</a> <span class="sep">/</span> <a href="blog.html">博客</a> <span class="sep">/</span> 写作台</p>
+
+      <div class="pagehead">
+        <h1>写作台</h1>
+        <p class="page-sub">写一篇文章，预览它，然后保存在这个浏览器里。觉得可以了，再导出 <code>posts.js</code>，替换站点文件夹里的那个文件。</p>
+      </div>
+
+      <div class="notice">
+        <strong>仅本机</strong> — 文章先保存在这台电脑的浏览器里，不会自动出现在别人的屏幕上。导出 <code>posts.js</code> 并替换站点文件，才算真正发布。
+      </div>
+
+      <div class="editor">
+
+        <form id="postForm" class="panel" autocomplete="off">
+          <h2 class="panel-head">撰写</h2>
+          <div class="panel-body">
+            <div class="field">
+              <label for="fTitle">标题</label>
+              <input id="fTitle" type="text" maxlength="120" required>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="fDate">日期</label>
+                <input id="fDate" type="date" required>
+              </div>
+              <div class="field">
+                <label for="fSlug">链接名</label>
+                <input id="fSlug" type="text" pattern="[a-z0-9\-]*" placeholder="自动" maxlength="60">
+                <p class="hint">a–z、0–9、连字符；保存后锁定。</p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="fTags">标签</label>
+              <input id="fTags" type="text" placeholder="键盘, 维修" maxlength="120">
+              <p class="hint">英文逗号分隔，最多八个。</p>
+            </div>
+
+            <div class="field">
+              <label for="fExcerpt">摘要</label>
+              <textarea id="fExcerpt" rows="2" maxlength="280"></textarea>
+              <p class="hint">显示在博客列表里；留空会自动生成。</p>
+            </div>
+
+            <div class="field">
+              <label for="fBody">正文</label>
+              <textarea id="fBody" rows="16" required></textarea>
+              <p class="hint">简单 Markdown；空一行开始新段落。</p>
+            </div>
+
+            <div class="edit-actions">
+              <button class="btn btn-save" type="submit" id="btnSave">保存到本机</button>
+              <button class="btn" type="button" id="btnNew">新文章</button>
+              <button class="btn btn-danger" type="button" id="btnDelete" disabled>删除</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <section class="panel">
+            <h2 class="panel-head">本机已保存</h2>
+            <div class="panel-body">
+              <div id="postRows" class="post-rows"></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2 class="panel-head">发布</h2>
+            <div class="panel-body">
+              <p class="tiny">导出会替换 <code>posts.js</code> 里的所有文章。操作前先备份旧文件。</p>
+              <div class="edit-actions">
+                <button class="btn btn-save" type="button" id="btnExport">导出 posts.js</button>
+                <button class="btn" type="button" id="btnCopy">复制 posts.js</button>
+              </div>
+              <hr>
+              <p class="tiny"><b>导入</b>已有的 <code>posts.js</code>（或 JSON 列表），在这里继续编辑。</p>
+              <input class="file-input" id="importFile" type="file" accept=".js,.json,text/javascript,application/json" aria-label="导入 posts.js">
+              <p class="hint" id="storageNote"></p>
+            </div>
+          </section>
+
+          <section class="panel panel-yellow">
+            <h2 class="panel-head">使用说明</h2>
+            <div class="panel-body">
+              <ol class="howto">
+                <li>先写，再保存。红色的 <span class="draft-badge">本地</span> 标记表示文章只存在这个浏览器里。</li>
+                <li>点击 <b>导出 posts.js</b>，下载更新后的文件。</li>
+                <li>用新文件替换站点文件夹里的 <code>posts.js</code>，再上传整个文件夹。这才算发布。</li>
+              </ol>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <section class="panel preview-panel">
+        <h2 class="panel-head">预览</h2>
+        <div class="panel-body">
+          <div id="preview" class="post-body">
+            <p class="muted">开始输入，文章会显示在这里。</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="page-end"><span class="dot">■</span> <a href="#main">回到顶部</a> <span class="dot">■</span></p>
+
+    </main>
+  </div>
+
+  <footer class="sitefooter">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="blog.html">Weblog</a>
+      <a href="music.html">Music</a>
+      <a href="roulette.html">Game</a>
+      <a href="write.html">Writing desk</a>
+      <a href="home.html#support">Support</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="footer-sponsor">Brought to you by <b>coffee</b> and <b>bad ideas</b> · <a href="home.html#support">Buy me a coffee</a></p>
+    <p class="footer-line">LAST UPDATED: 2026.11.12 &nbsp;|&nbsp; BEST VIEWED: NETSCAPE NAVIGATOR 3.0 / 1024 × 768</p>
+    <p class="footer-fine">Copyright © 2026 Brian. All Rights Reserved. 本页面由 Notepad 手工编写。<br>
+    <span class="construction blink">▲ 本站建设中 ▲</span></p>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="posts.js"></script>
+<script src="blog.js"></script>
+<script src="write.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

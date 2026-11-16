@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" role="img" aria-labelledby="t d">
+  <title id="t">Brian's Workshop</title>
+  <desc id="d">88 by 31 pixel navy badge for Brian's Workshop.</desc>
+  <rect width="88" height="31" fill="#000080"/>
+  <rect x="1.5" y="1.5" width="85" height="28" fill="none" stroke="#ffffff" stroke-width="1"/>
+  <text x="44" y="11" text-anchor="middle" fill="#ffffff" font-family="Courier New, Courier, monospace" font-size="8" font-weight="bold" letter-spacing="0.5">BRIAN'S</text>
+  <text x="44" y="20" text-anchor="middle" fill="#ffffff" font-family="Courier New, Courier, monospace" font-size="8" font-weight="bold" letter-spacing="0.5">WORKSHOP</text>
+  <text x="44" y="27" text-anchor="middle" fill="#c9c9ff" font-family="Courier New, Courier, monospace" font-size="4.5" letter-spacing="0.8">EST. 2026</text>
+</svg>

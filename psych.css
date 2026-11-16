@@ -1,0 +1,135 @@
+/* ==========================================================================
+   PSYCHOLOGICAL LAYER — small additions only.
+   No jumpscares, no audio, no dark takeover. The normal site stays normal.
+   ========================================================================== */
+
+.psych-footer {
+  margin: 7px 0 0;
+  color: #6f6a5f;
+  font: 8px/1.5 var(--mono);
+  letter-spacing: 0.07em;
+  opacity: 0.72;
+}
+.psych-footer .psych-dot { opacity: 0.45; }
+
+.psych-return {
+  margin: 4px 0 0;
+  color: #7a7062;
+  font: 8.5px/1.5 var(--mono);
+  letter-spacing: 0.04em;
+}
+
+.psych-about-note {
+  margin: 18px 0 6px;
+  padding: 5px 0 5px 10px;
+  border-left: 2px solid #b9b1a2;
+  color: #6b655a;
+  font: 10px/1.55 var(--mono);
+  letter-spacing: 0.01em;
+}
+.psych-about-note[hidden] { display: none; }
+
+.psych-404-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  align-items: baseline;
+  margin: 0 0 14px;
+  padding: 5px 8px;
+  border: 1px dashed #b9b1a2;
+  background: #f7f2e2;
+  color: #6b655a;
+  font: 8.5px/1.45 var(--mono);
+  letter-spacing: 0.04em;
+}
+.psych-404-strip .psych-404-label {
+  color: #7d2626;
+  letter-spacing: 0.1em;
+}
+.psych-404-strip a {
+  color: #4a4a4a;
+  text-decoration: underline dotted;
+}
+.psych-404-strip a:hover { color: #7d2626; }
+
+/* The hidden log page keeps the normal paper look; it is an archive, not a show. */
+.psych-logpage {
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 20px 24px 26px;
+  border: 1px solid #b9b1a2;
+  background: #f6f0dd;
+  color: #1d1d1b;
+  font: 12px/1.6 var(--mono);
+}
+.psych-log-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #b9b1a2;
+  color: #6f685b;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+}
+.psych-log-kicker {
+  margin: 24px 0 0;
+  color: #7d2626;
+  font: 9px/1.4 var(--mono);
+  letter-spacing: 0.18em;
+}
+.psych-logpage h1 {
+  margin: 4px 0 10px;
+  color: #0d1f55;
+  font: bold clamp(30px, 7vw, 54px)/0.95 var(--serif);
+  letter-spacing: -0.02em;
+}
+.psych-log-lede {
+  max-width: 620px;
+  margin: 0 0 20px;
+  color: #5f5a50;
+}
+.psych-log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 18px;
+}
+.psych-log-table th,
+.psych-log-table td {
+  padding: 5px 7px;
+  border-bottom: 1px solid #d5cebb;
+  text-align: left;
+  vertical-align: top;
+  font-size: 10px;
+}
+.psych-log-table th {
+  color: #6f685b;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.psych-log-table td:first-child { color: #8a8274; width: 46px; }
+.psych-log-table td:nth-child(2) { color: #4f4a41; white-space: nowrap; }
+.psych-log-table tr:last-child td { color: #7d2626; }
+.psych-log-note {
+  margin: 0 0 7px;
+  color: #6b6458;
+  font-size: 9px;
+  letter-spacing: 0.03em;
+}
+.psych-log-back {
+  color: #4f4a41;
+  font-size: 9px;
+  text-decoration: underline dotted;
+}
+.psych-log-back:hover { color: #7d2626; }
+
+@media (max-width: 620px) {
+  .psych-logpage { margin: 12px; padding: 14px; }
+  .psych-log-table th,
+  .psych-log-table td { padding: 4px 4px; font-size: 9px; }
+  .psych-log-table th:nth-child(4),
+  .psych-log-table td:nth-child(4) { display: none; }
+}

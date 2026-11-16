@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian's Workshop — Music Box</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v26M3 16h26M6.8 6.8l18.4 18.4M25.2 6.8L6.8 25.2' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>
+try {
+  var savedTextSize = parseInt(localStorage.getItem("bw_textsize"), 10) || 0;
+  if (savedTextSize === 1 || savedTextSize === 2) {
+    document.documentElement.classList.add("textsize-" + savedTextSize);
+  }
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="music-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="mast-edge mast-edge-left">
+      <span>EST. 2026</span>
+      <span>REV. 2026.11</span>
+    </div>
+    <div class="mast-center">
+      <p class="mast-kicker">☆ A HAND-CODED PERSONAL HOMEPAGE ☆</p>
+      <p class="mast-title"><a href="home.html">Brian's Workshop</a></p>
+      <p class="mast-sub">— DIY · keyboards · audio · cocktails —</p>
+      <p class="mast-meta">HTML + CSS + A LITTLE JAVASCRIPT · NO FRAMEWORKS</p>
+    </div>
+    <div class="mast-edge mast-edge-right">
+      <span>PAGE 06</span>
+      <span>HAND-CODED</span>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Site news ticker">
+    <div class="ticker-track">
+      <span>★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+      <span aria-hidden="true">★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Primary">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+    <a href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+    <a href="music.html" aria-current="page">Music</a>
+    <a href="roulette.html">Game</a>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Site sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE NAV ·</h2>
+        <ul class="navlist">
+          <li><a href="home.html">» Home</a></li>
+          <li><a href="about.html">» About</a></li>
+          <li><a href="help.html">» Help</a></li>
+          <li><a class="hot" href="blog.html">» Weblog</a> <span class="new blink">NEW!</span></li>
+          <li><a href="music.html" aria-current="page">» Music</a> <span class="new">BETA</span></li>
+          <li><a href="roulette.html">» Game</a> <span class="new">NEW!</span></li>
+          <li><a href="write.html">» Writing desk</a> <span class="new">LOCAL</span></li>
+        </ul>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE STATS ·</h2>
+        <div class="stats">
+          <p class="stat-label">YOU ARE VISITOR</p>
+          <p class="counter" id="hitCount" title="Visitor counter">000000</p>
+          <p class="stat-row"><span>VISITS TODAY</span> <b id="todayCount">—</b></p>
+          <p class="stat-row"><span>DAYS ONLINE</span> <b id="daysOnline">—</b></p>
+          <p class="stat-row"><span>ONLINE SINCE</span> <b>2026.11.02</b></p>
+        </div>
+      </section>
+
+      <section class="sidebox textsize-box">
+        <h2 class="sidebox-title">· TEXT SIZE ·</h2>
+        <div class="textsize" role="group" aria-label="Text size">
+          <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+          <span class="textsize-value" aria-live="polite">100%</span>
+          <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· THIS SITE ·</h2>
+        <a class="badge88" href="home.html" aria-label="Brian's Workshop — home">
+          <span>BRIAN'S<br>WORKSHOP</span>
+          <small>EST. 2026</small>
+        </a>
+        <div class="badge-row">
+          <a class="mini-badge mb-netscape" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Netscape<br>Now!</a>
+          <span class="mini-badge mb-y2k">Y2K<br>Ready</span>
+        </div>
+        <div class="badge-row">
+          <span class="mini-badge mb-notepad">Made with<br>Notepad</span>
+          <button class="mini-badge mb-devil devil-badge" type="button" aria-label="Devil Site">Devil<br>Site</button>
+        </div>
+        <p class="tiny center">Hand-coded. No frameworks.</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· MY OTHER SITES ·</h2>
+        <div class="site-icons">
+          <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener" title="wood_map"><img src="assets/wood.png" alt="wood_map"></a>
+          <a href="https://BZHU404.github.io/chinamed_map" target="_blank" rel="noopener" title="chinamed_map"><img src="assets/chinamed.png" alt="chinamed_map"></a>
+          <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener" title="Poison_map"><img src="assets/poison.png" alt="Poison_map"></a>
+          <a href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Flower_map"><img src="assets/flower.svg" alt="Flower_map"></a>
+          <a href="https://BZHU404.github.io/lux_map" target="_blank" rel="noopener" title="lux_map"><img src="assets/lux.png" alt="lux_map"></a>
+          <a href="https://BZHU404.github.io/alcohol_map" target="_blank" rel="noopener" title="酒谱 alcohol_map" aria-label="酒谱 alcohol_map"><img src="assets/wine-logo.svg" alt="酒谱 — alcohol map logo"></a>
+          <a class="logo-tile" href="https://BZHU404.github.io/perfume_map/" target="_blank" rel="noopener" title="香谱 perfume_map" aria-label="香谱 perfume_map"><img src="assets/perfume-logo.webp" alt="香谱 — perfume map logo"></a>
+          <a class="site-icon-text" href="https://github.com/BZHU404" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GH</a>
+          <a class="site-icon-text" href="https://github.com/BZHU404?tab=repositories" target="_blank" rel="noopener" title="All repositories" aria-label="All repositories">★</a>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SUPPORT ·</h2>
+        <a class="support-mini" href="#support">
+          <img src="assets/coffee-cup.png" alt="A cup of coffee">
+          <span>Buy me<br>a coffee</span>
+        </a>
+        <p class="tiny center">本站永久免费</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· ADVERTISEMENT ·</h2>
+        <div class="ad-120">
+          <b>YOUR AD<br>HERE</b>
+          <span class="blink">CHEAP!</span>
+          <a href="https://github.com/BZHU404" target="_blank" rel="noopener">inquire »</a>
+        </div>
+      </section>
+
+      <p class="sidebar-note">This site looks best with a cup of coffee.</p>
+    </aside>
+
+        <main id="main" class="content">
+
+      <p class="crumb"><a href="home.html">HOME</a> <span class="sep">/</span> MUSIC BOX</p>
+
+      <div class="pagehead">
+        <h1>Music Box <span class="music-cn">音乐盒</span></h1>
+        <p class="page-sub">A small jukebox for the workshop. Ten songs are in the machine. The jukebox is still being tuned.</p>
+      </div>
+
+      <div class="construction-banner" role="status">
+        <b><span class="blink">▲</span> 正在开发中 / UNDER CONSTRUCTION <span class="blink">▲</span></b>
+        <span>10 of 10 tracks are wired up. The jukebox is still being tuned.</span>
+      </div>
+
+      <section class="music-player" aria-label="Music player">
+        <audio id="bgm" src="music/catch-the-rainbow.mp3" preload="metadata"></audio>
+
+        <div class="player-top">
+          <div class="record" id="record" aria-hidden="true"><span class="record-label">33⅓</span></div>
+          <div class="player-readout">
+            <p class="player-kicker" id="trackKicker">NOW PLAYING · TRACK 01 / 10</p>
+            <h2 id="trackTitle">Catch the Rainbow</h2>
+            <p class="player-artist" id="trackArtist">Rainbow · 1975</p>
+            <p class="player-time"><span id="musicTime">00:00 / 06:36</span></p>
+            <p class="player-state" id="playState" aria-live="polite">■ STOPPED</p>
+          </div>
+        </div>
+
+        <div class="player-lyrics" aria-label="Lyrics">
+          <span class="player-lyrics-label">LYRICS</span>
+          <div class="player-lyrics-window">
+            <div class="player-lyrics-track" id="lyricsTrack"></div>
+          </div>
+        </div>
+
+        <p class="viz" id="viz" aria-hidden="true">▁▁▁▁▁▁▁▁▁▁</p>
+
+        <input class="seek" id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through the song">
+
+        <div class="player-controls">
+          <button class="btn player-btn" type="button" id="btnMusic">▶ PLAY</button>
+          <button class="btn player-btn" type="button" id="btnStop">■ STOP</button>
+          <button class="btn player-btn" type="button" id="btnVol">VOL: MED</button>
+        </div>
+        <p class="player-note">Nothing autoplays. Audio files are local; lyrics load from <code>music/*.lrc</code>.</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-head">Playlist · 我的歌单</h2>
+        <div class="panel-body">
+          <ol class="tracklist">
+            <li class="track is-current" data-track="catch">
+              <span class="track-num">01</span>
+              <span class="track-name"><b>Catch the Rainbow</b><small>Rainbow · 1975 · 6:36</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="catch">PLAY</button></span>
+            </li>
+            <li class="track" data-track="just">
+              <span class="track-num">02</span>
+              <span class="track-name"><b>Just the Two of Us</b><small>Grover Washington Jr., Bill Withers · 4:00</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="just">PLAY</button></span>
+            </li>
+            <li class="track" data-track="despacito">
+              <span class="track-num">03</span>
+              <span class="track-name"><b>Despacito</b><small>Luis Fonsi, Daddy Yankee · 3:50</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="despacito">PLAY</button></span>
+            </li>
+            <li class="track" data-track="killer">
+              <span class="track-num">04</span>
+              <span class="track-name"><b>Killer Queen</b><small>Queen · 3:01</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="killer">PLAY</button></span>
+            </li>
+            <li class="track" data-track="back">
+              <span class="track-num">05</span>
+              <span class="track-name"><b>Back in Black</b><small>AC/DC · one of my favourites · 4:15</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="back">PLAY</button></span>
+            </li>
+            <li class="track" data-track="johnny">
+              <span class="track-num">06</span>
+              <span class="track-name"><b>Johnny B. Goode</b><small>Chuck Berry · 2:39</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="johnny">PLAY</button></span>
+            </li>
+            <li class="track" data-track="guns">
+              <span class="track-num">07</span>
+              <span class="track-name"><b>21 Guns</b><small>Green Day · 5:21</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="guns">PLAY</button></span>
+            </li>
+            <li class="track" data-track="freebird">
+              <span class="track-num">08</span>
+              <span class="track-name"><b>Free Bird</b><small>Lynyrd Skynyrd · 9:10</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="freebird">PLAY</button></span>
+            </li>
+            <li class="track" data-track="come">
+              <span class="track-num">09</span>
+              <span class="track-name"><b>Come as You Are</b><small>Nirvana · 3:39</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="come">PLAY</button></span>
+            </li>
+            <li class="track" data-track="letitbe">
+              <span class="track-num">10</span>
+              <span class="track-name"><b>Let It Be</b><small>The Beatles · 3:50</small></span>
+              <span class="track-status"><button class="btn btn-small track-play" type="button" data-track="letitbe">PLAY</button></span>
+            </li>
+          </ol>
+          <p class="tracklist-note">All ten tracks have audio and lyrics. 全部接好了。</p>
+        </div>
+      </section>
+
+    </main>
+
+</div>
+
+      <section class="ad-block" aria-label="Advertisement">
+        <span class="ad-label">· ADVERTISEMENT ·</span>
+        <a class="ad-468" href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">
+          <span class="ad-468-thumbs">
+            <img src="assets/wood.png" alt="">
+            <img src="assets/poison.png" alt="">
+            <img src="assets/flower.svg" alt="">
+          </span>
+          <span class="ad-468-copy">
+            <b>The Map Room</b>
+            <small>Seven hand-made maps. Zero algorithms. No cookies.</small>
+          </span>
+          <span class="ad-468-cta flash">Visit!</span>
+        </a>
+      </section>
+
+      <section class="support" id="support">
+        <h2 class="support-title">· Support this site · 支持本站 ·</h2>
+        <div class="support-grid">
+          <div class="support-qr">
+            <a href="assets/coffee-qr.png" target="_blank" rel="noopener" title="Open the coffee QR code">
+              <img src="assets/coffee-qr.png" alt="Coffee QR code — scan to support the site">
+            </a>
+            <span>Scan / click to enlarge</span>
+          </div>
+          <div class="support-copy">
+            <h3>Buy me a coffee</h3>
+            <p>本站永久免费。如果这里的东西对你有用，请我喝一杯咖啡。</p>
+            <p class="support-small">Every cup becomes domain renewals, solder, and another bad idea.</p>
+            <a class="btn btn-small" href="assets/coffee-qr.png" target="_blank" rel="noopener">Open the QR code</a>
+          </div>
+          <div class="support-cup">
+            <img src="assets/coffee-cup.png" alt="A cup of coffee">
+            <span>Thanks</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="webring" id="webring" aria-label="Webring">
+        <span class="webring-title">· The Tinkerer's Webring ·</span>
+        <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">&laquo; prev</a>
+        <span class="sep">|</span>
+        <a id="randomSite" href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Random map site">random</a>
+        <span class="sep">|</span>
+        <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener">next &raquo;</a>
+      </nav>
+
+      <p class="page-end"><span class="dot">■</span> <a href="#main">Back to top</a> <span class="dot">■</span></p>
+
+  <footer class="sitefooter">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="blog.html">Weblog</a>
+      <a href="music.html">Music</a>
+      <a href="roulette.html">Game</a>
+      <a href="write.html">Writing desk</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="footer-sponsor">Brought to you by <b>coffee</b> and <b>bad ideas</b> · <a href="#support">Buy me a coffee</a></p>
+    <p class="footer-line">LAST UPDATED: 2026.11.12 &nbsp;|&nbsp; BEST VIEWED: NETSCAPE NAVIGATOR 3.0 / 1024 × 768</p>
+    <p class="footer-fine">Copyright © 2026 Brian. All Rights Reserved. 本页面由 Notepad 手工编写。<br>
+    <span class="construction blink">▲ 本站建设中 ▲</span></p>
+  </footer>
+
+</div>
+
+<script type="text/plain" id="lrc-catch">
+[00:00.00]Catch The Rainbow - Rainbow
+[00:30.00]   
+[00:30.00]When evening falls
+[00:34.00]当夜幕降临
+[00:34.00]Shell run to me
+[00:37.00]她奔向我
+[00:37.00]Like whispered dreams
+[00:41.00]好似呓语美梦
+[00:41.00]Your eyes can't see
+[00:49.00]抽去双眼光明
+[00:49.00]Soft and warm
+[00:53.00]以轻柔 以温暖
+[00:53.00]Shell touch my face
+[00:57.00]她的指尖抚掠过我的脸颊
+[00:57.00]A bed of straw
+[01:00.00]草席铺就的床上
+[01:00.00]Against the lace
+[01:09.00]还镶着蕾丝花边
+[01:09.00]We believed wed catch the rainbow
+[01:16.00]我相信我们曾抓住那即逝的彩虹
+[01:16.00]Ride the wind to the sun
+[01:23.00]乘风直至白日
+[01:23.00]Sail away on ships of wonder
+[01:32.00]载奇迹之舟踏浪远行
+[01:32.00]But lifes not a wheel
+[01:35.00]但生活决不是那齿轮
+[01:35.00]With chains made of steel
+[01:39.00]那被铁锁链束缚的齿轮
+[01:39.00]So bless me come the dawn
+[01:46.00]所以 祝福我吧 天就快亮了
+[01:46.00]Come the dawn
+[01:50.00]天快亮了
+[01:50.00]Come the dawn
+[01:53.00]天快亮了
+[01:53.00]Come the dawn
+[02:50.00]天快亮了
+[02:50.00]We believed wed catch the rainbow
+[02:57.00]我相信我们曾抓住那即逝的彩虹
+[02:57.00]Ride the wind to the sun
+[03:04.00]乘风直至白日
+[03:04.00]Sail away on ships of wonder
+[03:13.00]载奇迹之舟踏浪远行
+[03:13.00]But lifes not a wheel
+[03:16.00]但生活决不是那齿轮
+[03:16.00]With chains made of steel
+[03:20.00]那被铁锁链束缚的齿轮
+[03:20.00]So bless me oh bless me bless me
+[03:30.00]所以 祝福我吧 祝福我吧 祝福我吧
+[03:30.00]Come the dawn
+[03:34.00]天快亮了
+[03:34.00]Come the dawn
+[03:37.00]天快亮了
+[03:37.00]Come the dawn
+[03:42.00]天快亮了
+[03:42.00]Come the dawn
+[03:47.00]天快亮了
+</script>
+
+<script type="text/plain" id="lrc-just">
+[00:00.00]Just the Two of Us - Bill Withers (比尔 威瑟斯)
+[00:03.00]   
+[00:03.00]Lyrics by：Bill Withers/Ralph Macdonald/William Salter
+[00:07.00]   
+[00:07.00]Composed by：Bill Withers/Ralph Macdonald/William Salter
+[00:10.00]   
+[00:10.00]Arranged by：Bill Eaton
+[00:14.00]   
+[00:14.00]Produced by：Jr. Grover Washington/Ralph MacDonald/John Snyder
+[00:21.00]   
+[00:21.00]I see the crystal raindrops fall
+[00:23.00]我看见那水晶般的雨滴掉落
+[00:23.00]And the beauty of it all
+[00:26.00]也看见了这一切的美丽
+[00:26.00]Is when the sun comes shining through
+[00:30.00]当太阳出现光芒四射时
+[00:30.00]To make those rainbows in my mind
+[00:33.00]他让那彩虹在我的心中出现
+[00:33.00]When I think of you sometime
+[00:36.00]当我有时想着你时
+[00:36.00]And I want to spend some time with you
+[00:39.00]我想与你一起度过美好时光
+[00:39.00]Just the two of us
+[00:42.00]只有你我
+[00:42.00]We can make it if we try
+[00:44.00]如果我们尝试 我们能够做到
+[00:44.00]Just the two of us
+[00:47.00]只有你我
+[00:47.00]Just the two of us
+[00:49.00]只有你我
+[00:49.00]Just the two of us
+[00:52.00]只有你我
+[00:52.00]Building castles in the sky
+[00:54.00]在天空中搭建城堡
+[00:54.00]Just the two of us
+[00:57.00]只有你我
+[00:57.00]You and I
+[01:00.00]你我
+[01:00.00]We look for love no time for tears
+[01:03.00]我们寻找爱情 没有时间哭泣
+[01:03.00]Wasted water's all that is
+[01:06.00]眼泪是浪费掉的水而已
+[01:06.00]And it don't make no flowers grow
+[01:10.00]它也不可能让花儿生长
+[01:10.00]Good things might come to those who wait
+[01:13.00]美好的事情将会降临在虔诚等待之人面前
+[01:13.00]Not for those who wait too late
+[01:16.00]而不是迟迟不行动的人面前
+[01:16.00]We gotta go for all we know
+[01:19.00]我只知道我们得要全力以赴
+[01:19.00]Just the two of us
+[01:22.00]只有你我
+[01:22.00]We can make it if we try
+[01:24.00]如果我们尝试 我们能够做到
+[01:24.00]Just the two of us
+[01:27.00]只有你我
+[01:27.00]Just the two of us
+[01:29.00]只有你我
+[01:29.00]Just the two of us
+[01:32.00]只有你我
+[01:32.00]Building them castles in the sky
+[01:34.00]在天空中搭建城堡
+[01:34.00]Just the two of us
+[01:37.00]只有你我
+[01:37.00]You and I
+[02:12.00]你我
+[02:12.00]I hear the crystal raindrops fall
+[02:15.00]我能听见水晶般的雨滴掉落
+[02:15.00]On the window down the hall
+[02:17.00]落在门厅的窗户上
+[02:17.00]And it becomes the morning dew
+[02:22.00]化作晨露
+[02:22.00]And darling when the morning comes
+[02:24.00]亲爱的当早晨来临
+[02:24.00]And I see the morning sun
+[02:27.00]我想成为与你一同
+[02:27.00]I want to be the one with you
+[02:31.00]共赏晨曦的人
+[02:31.00]Just the two of us
+[02:33.00]只有你我
+[02:33.00]We can make it if we try
+[02:36.00]如果我们尝试 我们能够做到
+[02:36.00]Just the two of us
+[02:38.00]只有你我
+[02:38.00]Just the two of us
+[02:41.00]只有你我
+[02:41.00]Just the two of us
+[02:43.00]只有你我
+[02:43.00]Building big castles way up high
+[02:46.00]在天空中搭建城堡
+[02:46.00]Just the two of us
+[02:48.00]只有你我
+[02:48.00]You and I
+[02:51.00]你我
+[02:51.00]Just the two of us
+[02:54.00]只有你我
+[02:54.00]Just the two of us
+[02:55.00]只有你我
+[02:55.00]We can make it
+[02:56.00]我们能够做到
+[02:56.00]Just the two of us
+[02:58.00]只有你我
+[02:58.00]Get together baby
+[03:01.00]宝贝 我们一起
+[03:01.00]Just the two of us
+[03:03.00]只有你我
+[03:03.00]Just the two of us
+[03:05.00]只有你我
+[03:05.00]We can make it
+[03:06.00]我们能够做到
+[03:06.00]Just the two of us
+[03:11.00]只有你我
+[03:11.00]Just the two of us
+[03:15.00]只有你我
+[03:15.00]We can make it
+[03:16.00]我们能够做到
+[03:16.00]Just the two of us
+[03:21.00]只有你我
+[03:21.00]Just the two of us
+[03:25.00]只有你我
+[03:25.00]We can make it
+[03:26.00]我们能够做到
+[03:26.00]Just the two of us
+[03:31.00]只有你我
+[03:31.00]Just the two of us
+[03:35.00]只有你我
+[03:35.00]We can make it
+[03:36.00]我们能够做到
+[03:36.00]Just the two of us
+[03:41.00]只有你我
+[03:41.00]Just the two of us
+[03:45.00]只有你我
+[03:45.00]We can make it
+[03:46.00]我们能够做到
+[03:46.00]Just the two of us
+[03:51.00]只有你我
+[03:51.00]Just the two of us
+[03:56.00]只有你我
+</script>
+
+<script type="text/plain" id="lrc-despacito">
+[00:00.00]Despacito - Luis Fonsi (路易斯·冯西)/Daddy Yankee
+[00:02.00]   
+[00:02.00]Lyrics by：Luis Fonsi/Erika Ender
+[00:04.00]   
+[00:04.00]Composed by：Luis Fonsi/Erika Ender
+[00:06.00]   
+[00:06.00]Ay Fonsi D.Y.
+[00:12.00]   
+[00:12.00]Ohhh oh no oh no oh
+[00:17.00]   
+[00:17.00]Hey yeah
+[00:17.00]   
+[00:17.00]Dididiri Daddy go
+[00:20.00]   
+[00:20.00]Sí sabes que ya llevo un rato mirándote
+[00:25.00]是的，你知道我已注视你一会了
+[00:25.00]Tengo que bailar contigo hoy
+[00:30.00]今天我一定要与你共舞一曲
+[00:30.00]D.Y.
+[00:31.00]   
+[00:31.00]Vi que tu mirada ya estaba llamándome
+[00:36.00]看，你的目光在热切呼唤着我
+[00:36.00]Muéstrame el camino que yo voy
+[00:40.00]指引我通往你心之路我定风雨无阻
+[00:40.00]Oh
+[00:41.00]   
+[00:41.00]Tú tú eres el imán y yo soy el metal
+[00:45.00]你，你就是磁铁而我是被你吸引的金属
+[00:45.00]Me voy acercando y voy armando el plan
+[00:47.00]我正接近着你我正周密的策划
+[00:47.00]Sólo con pensarlo se acelera el pulso
+[00:51.00]意念驱使着我加快了脚步
+[00:51.00]Oh yeah
+[00:52.00]   
+[00:52.00]Ya ya me está gustando más de lo normal
+[00:55.00]如今，如今我之外能够享受着行进的快感
+[00:55.00]Todos mis sentidos van pidiendo más
+[00:58.00]我身体的每个细胞都在祈求着更多
+[00:58.00]Esto hay que tomarlo sin ningún apuro
+[01:02.00]我一定要义无反顾的到你身边
+[01:02.00]Despacito
+[01:04.00]轻轻地
+[01:04.00]Quiero respirar tu cuello despacito
+[01:07.00]我想贴近你的劲边轻轻的呼吸
+[01:07.00]Deja que te diga cosas al oído
+[01:10.00]让我附在你耳边向你吐露真言
+[01:10.00]Para que te acuerdes si no estás conmigo
+[01:13.00]让你牢记我的诺言哪怕我不在你身边
+[01:13.00]Despacito
+[01:15.00]轻轻地
+[01:15.00]Quiero desnudarte a besos despacito
+[01:18.00]我想用吻慢慢地将你的衣衫褪去
+[01:18.00]Firmar las paredes de tu laberinto
+[01:20.00]将你的谜题画在墙上
+[01:20.00]Y hacer de tu cuerpo todo un manuscrito
+[01:23.00]让你的身体成为我手稿的绘板
+[01:23.00]Sube sube sube sube sube
+[01:25.00]   
+[01:25.00]Quiero ver bailar tu pelo quiero ser tu ritmo
+[01:28.00]我向每日清晨看见你头发起舞 我想成为你生命的韵律
+[01:28.00]Woah woah
+[01:29.00]   
+[01:29.00]Que le enseñes a mi boca
+[01:31.00]我想你向我的唇给予暗示
+[01:31.00]Woah woah
+[01:32.00]   
+[01:32.00]Tus lugares favoritos
+[01:34.00]你最喜欢它亲吻的地方
+[01:34.00]Favorito favorito baby
+[01:36.00]最喜欢的宝贝
+[01:36.00]Déjame sobrepasar tus zonas de peligro
+[01:39.00]让我越过你身体的危险地带
+[01:39.00]Woah woah
+[01:40.00]   
+[01:40.00]Hasta provocar tus gritos
+[01:42.00]直到你抑制不住地尖叫
+[01:42.00]Woah woah
+[01:42.00]   
+[01:42.00]Y que olvides tu apellido
+[01:46.00]直至你忘记你的名字
+[01:46.00]Si te pido un beso ven dámelo yo sé que estás pensándolo
+[01:48.00]如果我向你索求一个吻，请给我 我知道你正在考虑当中
+[01:48.00]Llevo tiempo intentándolo mami esto es dando y dándolo
+[01:51.00]我已尝试了一段时间 宝贝这只是一个吻给我吧
+[01:51.00]Sabes que tu corazón conmigo te hace bang-bang
+[01:54.00]你知道每每见你我的心怦怦直跳
+[01:54.00]Sabes que esa beba está buscando de mi bang-bang
+[01:57.00]你知道我的心在寻找着它跳动的你
+[01:57.00]Ven prueba de mi boca para ver cómo te sabe
+[01:59.00]来从我的唇里尝尝你的唇是什么滋味
+[01:59.00]Quiero quiero quiero ver cuánto amor a ti te cabe
+[02:02.00]我想 我想看看你能爱地多深
+[02:02.00]Yo no tengo prisa yo me quiero dar el viaje
+[02:05.00]我并不着急，我想带着旅行的心情
+[02:05.00]Empezamos lento después salvaje
+[02:07.00]始于风平浪静，之后疾风暴雨
+[02:07.00]Pasito a pasito suave suavecito
+[02:10.00]一步一步，温柔再温柔一点
+[02:10.00]Nos vamos pegando poquito a poquito
+[02:13.00]我们开始水乳交融，一点一点
+[02:13.00]Cuando tú me besas con esa destreza
+[02:15.00]当你用熟练的技巧吻我
+[02:15.00]Veo que eres malicia con delicadeza
+[02:18.00]我发觉是你对我轻柔的挑逗
+[02:18.00]Pasito a pasito suave suavecito
+[02:21.00]一步一步，温柔再温柔一点
+[02:21.00]Nos vamos pegando poquito a poquito
+[02:24.00]我们开始水乳交融，一点一点
+[02:24.00]Y es que esa belleza es un rompecabezas
+[02:26.00]你的美如同未完成的拼图
+[02:26.00]Pero pa' montarlo aquí tengo la pieza
+[02:29.00]但我余有拼凑的一角
+[02:29.00]Oye
+[02:30.00]   
+[02:30.00]Despacito
+[02:32.00]轻轻地
+[02:32.00]Quiero respirar tu cuello despacito
+[02:34.00]我想贴近你的劲边轻轻的呼吸
+[02:34.00]Deja que te diga cosas al oído
+[02:37.00]让我附在你耳边向你吐露真言
+[02:37.00]Para que te acuerdes si no estás conmigo
+[02:41.00]让你牢记我的诺言哪怕我不在你身边
+[02:41.00]Despacito
+[02:43.00]轻轻地
+[02:43.00]Quiero desnudarte a besos despacito
+[02:45.00]我想用吻慢慢地将你的衣衫褪去
+[02:45.00]Firmar las paredes de tu laberinto
+[02:48.00]将你的谜题画在墙上
+[02:48.00]Y hacer de tu cuerpo todo un manuscrito
+[02:50.00]让你的身体成为我手稿的绘板
+[02:50.00]Sube sube sube sube sube
+[02:53.00]   
+[02:53.00]Quiero ver bailar tu pelo quiero ser tu ritmo
+[02:56.00]我向每日清晨看见你头发起舞 我想成为你生命的韵律
+[02:56.00]Woah woah
+[02:57.00]   
+[02:57.00]Que le enseñes a mi boca
+[02:59.00]我想你向我的唇给予暗示
+[02:59.00]Woah woah
+[02:59.00]   
+[02:59.00]Tus lugares favoritos
+[03:01.00]你最喜欢它亲吻的地方
+[03:01.00]Favorito favorito baby
+[03:03.00]最喜欢的，宝贝
+[03:03.00]Déjame sobrepasar tus zonas de peligro
+[03:07.00]让我越过你身体的危险地带
+[03:07.00]Woah woah
+[03:08.00]   
+[03:08.00]Hasta provocar tus gritos
+[03:09.00]直到你抑制不住地尖叫
+[03:09.00]Woah woah
+[03:10.00]   
+[03:10.00]Y que olvides tu apellido
+[03:13.00]直至你忘记你的名字
+[03:13.00]Despacito
+[03:15.00]轻轻地
+[03:15.00]Vamo' a hacerlo en una playa en Puerto Rico
+[03:18.00]让我们在波多黎各的海滩完成这个仪式
+[03:18.00]Hasta que las olas griten "Ay Bendito"
+[03:20.00]直到拍起的海浪叫到 哦我的天
+[03:20.00]Para que mi sello se quede contigo
+[03:23.00]直到给你留下属于我的烙印
+[03:23.00]Báilalo
+[03:24.00]   
+[03:24.00]Pasito a pasito suave suavecito
+[03:27.00]一步一步，温柔再温柔一点
+[03:27.00]Nos vamos pegando poquito a poquito
+[03:30.00]我们开始水乳交融，一点一点
+[03:30.00]Que le enseñes a mi boca
+[03:32.00]我想你向我的唇给予暗示
+[03:32.00]Tus lugares favoritos
+[03:34.00]你最喜欢它亲吻的地方
+[03:34.00]Favorito favorito baby
+[03:36.00]最喜欢的，宝贝
+[03:36.00]Pasito a pasito suave suavecito
+[03:38.00]一步一步，温柔再温柔一点
+[03:38.00]Nos vamos pegando poquito a poquito
+[03:40.00]我们开始水乳交融，一点一点
+[03:40.00]Hasta provocar tus gritos
+[03:42.00]直到你抑制不住地尖叫
+[03:42.00]Fonsi
+[03:43.00]   
+[03:43.00]Y que olvides tu apellido
+[03:44.00]直至你忘记你的名字
+[03:44.00]D.Y.
+[03:45.00]   
+[03:45.00]Despacito
+[03:50.00]轻轻地
+</script>
+
+<script type="text/plain" id="lrc-killer">
+[00:00.00]Killer Queen - Queen (皇后乐队)
+[00:00.00]   
+[00:00.00]Lyrics by：Freddie Mercury
+[00:01.00]   
+[00:01.00]Composed by：Freddie Mercury
+[00:02.00]   
+[00:02.00]She keeps Moet et Chandon
+[00:05.00]她把酩悦香槟
+[00:05.00]In her pretty cabinet
+[00:07.00]珍藏于精致的橱柜
+[00:07.00]Let them eat cake she says
+[00:09.00]让他们吃蛋糕啊 她说
+[00:09.00]Just like Marie Antoinette
+[00:12.00]就像马丽亚·安东尼特一样
+[00:12.00]A built-in remedy
+[00:14.00]她是解药
+[00:14.00]For Kruschev and Kennedy
+[00:16.00]治愈赫鲁晓夫和肯尼迪
+[00:16.00]At anytime an invitation
+[00:18.00]无论何时 她的邀请
+[00:18.00]You can't decline
+[00:21.00]你都无法拒绝
+[00:21.00]Caviar and cigarettes
+[00:23.00]鱼子酱和香烟
+[00:23.00]Well versed in etiquette
+[00:25.00]仪态万方 礼节庄重
+[00:25.00]Extraordinarily nice
+[00:27.00]极其优雅
+[00:27.00]She's a Killer
+[00:28.00]她是个杀手女王
+[00:28.00]Queen Gunpowder
+[00:31.00]是火药
+[00:31.00]Gelatine
+[00:31.00]是明胶
+[00:31.00]Dynamite with a Laser Beam
+[00:33.00]是带有镭射激光的炸药
+[00:33.00]Guaranteed to blow your mind
+[00:36.00]保证让你神魂颠倒
+[00:36.00]Anytime
+[00:38.00]任何时候都逃不掉
+[00:38.00]Recommended at the price
+[00:40.00]绝对物有所值
+[00:40.00]Insatiable an appetite
+[00:42.00]满足你的一切需求
+[00:42.00]Wanna try
+[00:51.00]想试试吗
+[00:51.00]To avoid complications
+[00:54.00]为了避免纠纷
+[00:54.00]She never kept the same address
+[00:56.00]她的住址时常变更
+[00:56.00]In conversation
+[00:58.00]对话的时候
+[00:58.00]She spoke just like a Baroness
+[01:00.00]她仪态端庄 就像男爵夫人一样
+[01:00.00]Met a man from China
+[01:02.00]遇见一个中国男人
+[01:02.00]Went down to Geisha Minah
+[01:04.00]成为了艺伎
+[01:04.00]Then again incidentally
+[01:06.00]然后偶然之间
+[01:06.00]If you're that way inclined
+[01:08.00]若你向她靠近
+[01:08.00]Perfume came naturally from Paris
+[01:11.00]来自巴黎的香水味便扑鼻而来
+[01:11.00]For cars she couldn't careless
+[01:13.00]她酷爱汽车
+[01:13.00]Fastidious and precise
+[01:15.00]对车的要求极其苛刻 极其细致
+[01:15.00]She's a Killer
+[01:16.00]她是个杀手女王
+[01:16.00]Queen Gunpowder
+[01:18.00]是火药
+[01:18.00]Gelatine
+[01:19.00]是明胶
+[01:19.00]Dynamite with a Laser Beam
+[01:21.00]是带有镭射激光的炸药
+[01:21.00]Guaranteed to blow your mind
+[01:24.00]保证让你神魂颠倒
+[01:24.00]Anytime
+[02:00.00]任何时候都逃不掉
+[02:00.00]Drop of a hat she's as willing as
+[02:03.00]忽然之间 她就像
+[02:03.00]Playful as a p***y cat
+[02:05.00]爱玩的猫咪一样优雅妩媚
+[02:05.00]Then momentarily out of action
+[02:08.00]突然安静了
+[02:08.00]Temporarily out of gas
+[02:10.00]突然平息了
+[02:10.00]To absolutely
+[02:11.00]让你彻底
+[02:11.00]Drive you wild
+[02:13.00]意乱情迷
+[02:13.00]Wild
+[02:14.00]情迷
+[02:14.00]She's all out to get you
+[02:16.00]她把你玩弄于股掌之间
+[02:16.00]She's a Killer
+[02:17.00]她是个杀手女王
+[02:17.00]Queen Gunpowder
+[02:20.00]是火药
+[02:20.00]Gelatine
+[02:21.00]是明胶
+[02:21.00]Dynamite with a Laser Beam
+[02:23.00]是带有镭射激光的炸药
+[02:23.00]Guaranteed to blow your mind
+[02:25.00]保证让你神魂颠倒
+[02:25.00]Anytime
+[02:27.00]任何时候都逃不掉
+[02:27.00]Recommended at the price
+[02:29.00]绝对物有所值
+[02:29.00]Insatiable an appetite
+[02:31.00]满足你的一切需求
+[02:31.00]Wanna try
+[02:35.00]想试试吗
+[02:35.00]You wanna try
+[02:40.00]你想试试吗
+</script>
+
+<script type="text/plain" id="lrc-back">
+[00:00.00]Back In Black - AC/DC (交流/直流)
+[00:08.00]   
+[00:08.00]Lyrics by：Malcolm You
+[00:17.00]   
+[00:17.00]Composed by：Malcolm You
+[00:26.00]   
+[00:26.00]Back in black I hit the sack
+[00:29.00]终于回到黑暗了 我陷入了沉睡
+[00:29.00]I've been too long I'm glad to be back
+[00:31.00]我已游荡了太久 黑暗使我欣喜若狂
+[00:31.00]Yes I'm let loose from the noose
+[00:35.00]是的 我已从那折磨我的套索中释放出来
+[00:35.00]That's kept me hanging about
+[00:36.00]枷锁使我仿佛行尸走肉
+[00:36.00]I'm just looking at the sky 'cause it's getting me high
+[00:40.00]像繁星一样生活只为那耀眼的一瞬
+[00:40.00]Forget the hearse 'cause I'll never die
+[00:42.00]去他的灵车 因为我从未死亡
+[00:42.00]I got nine lives cat's eyes
+[00:45.00]我有九条命和看穿黑暗的眼睛
+[00:45.00]Abusing every one of them and running wild
+[00:47.00]他们谁都别想摆脱我的虐待 我要疯狂地毒打他们
+[00:47.00]'Cause I'm back yes I'm back
+[00:52.00]因为噩梦回来了 我回来了
+[00:52.00]Well I'm back yes I'm back
+[00:57.00]我回来了 是的 我回来了
+[00:57.00]Well I'm back back
+[01:02.00]是的 我回来了
+[01:02.00]Well I'm back in black
+[01:05.00]我终于回到黑暗之中
+[01:05.00]Yes I'm back in black
+[01:08.00]我终于回到黑暗之中
+[01:08.00]Back in the back of a Cadillac
+[01:10.00]坐着凯迪拉克 回归黑暗
+[01:10.00]Number one with a bullet I'm a power pack
+[01:12.00]黑夜中我打响了第一发子弹
+[01:12.00]Yes I'm in a bang with a gang
+[01:16.00]在那声巨响中只有我和一只枪
+[01:16.00]They've got to catch me if they want me to hang
+[01:17.00]他们想绞死我 可要先能捉住我 
+[01:17.00]'Cause I'm back on the track and I'm beatin' the flack
+[01:20.00]因为我回到了自己的地盘 我还要宣告
+[01:20.00]Nobody's gonna get me on another rap
+[01:23.00]没人能再惩罚我
+[01:23.00]So look at me now I'm just making my play
+[01:26.00]瞪大眼睛看好了 我现在才刚刚开始
+[01:26.00]Don't try to push your luck just get out of my way
+[01:28.00]别想着心存侥幸 马上走开
+[01:28.00]'Cause I'm back yes I'm back
+[01:33.00]因为噩梦回来了 我回来了
+[01:33.00]Well I'm back yes I'm back
+[01:38.00]我回来了 是的 我回来了
+[01:38.00]Well I'm back back
+[01:43.00]是的 我回来了
+[01:43.00]Well I'm back in black
+[01:46.00]我终于回到黑暗之中
+[01:46.00]Yes I'm back in black
+[02:29.00]我终于回到黑暗之中
+[02:29.00]Well I'm back yes I'm back
+[02:34.00]我回来了 是的 我回来了
+[02:34.00]Well I'm back yes I'm back
+[02:39.00]我回来了 是的 我回来了
+[02:39.00]Well I'm back back
+[02:44.00]是的 我回来了
+[02:44.00]Well I'm back in black
+[02:47.00]我终于回到黑暗之中
+[02:47.00]Yes I'm back in black yow
+[02:52.00]我终于回到黑暗之中
+[02:52.00]Ah yeah
+[02:54.00]   
+[02:54.00]Oh yeah
+[02:57.00]   
+[02:57.00]Take my love
+[02:59.00]带上我的爱
+[02:59.00]Yeah yeah
+[03:03.00]   
+[03:03.00]Yeah
+[03:05.00]   
+[03:05.00]Ah hey yeah
+[03:07.00]   
+[03:07.00]Ooh yeah
+[03:09.00]   
+[03:09.00]Well I'm back
+[03:12.00]我回来了
+[03:12.00]I'm back
+[03:13.00]我回来了
+[03:13.00]Back well I'm
+[03:15.00]我回来了
+[03:15.00]I'm back
+[03:15.00]我回来了
+[03:15.00]Back
+[03:17.00]回来
+[03:17.00]I'm back
+[03:18.00]我回来了
+[03:18.00]Back
+[03:20.00]回来
+[03:20.00]I'm back
+[03:20.00]我回来了
+[03:20.00]Back
+[03:22.00]回来
+[03:22.00]I'm back
+[03:23.00]我回来了
+[03:23.00]Back back in black
+[03:27.00]回到了黑暗
+[03:27.00]Yes I'm back in black
+[03:33.00]我终于回到黑暗之中
+[03:33.00]I've hit the sack
+[03:38.00]一片漆黑
+</script>
+
+<script type="text/plain" id="lrc-johnny">
+[00:17.00]Deep down Louisiana close to New Orleans
+[00:20.00]来到路易斯安纳州的新奥尔良附近
+[00:20.00]Way back up in the woods among the evergreens
+[00:23.00]在那常青藤环抱的树林里
+[00:23.00]There stood a log cabin made of earth and wood
+[00:26.00]有一个由泥土和木头堆成的小屋
+[00:26.00]Where lived a country boy
+[00:27.00]住着一个乡村男孩
+[00:27.00]By named Johnny B  Goode
+[00:28.00]名叫Johnny BGoode
+[00:28.00]Who never ever learned to read or write so well
+[00:31.00]他从未接受过良好的教育
+[00:31.00]But he could play a guitar just like ringing a bell
+[00:33.00]但他会弹得一手动听吉他
+[00:33.00]Go Go  Go Johnny Go Go
+[00:37.00]Johnny前进
+[00:37.00]Go Johnny Go Go
+[00:41.00]Johnny前进
+[00:41.00]Go Johnny Go Go
+[00:44.00]Johnny前进
+[00:44.00]Go Johnny Go Go
+[00:48.00]Johnny前进
+[00:48.00]Johnny B  Goode
+[00:51.00]Johnny BGoode
+[00:51.00]He used to carry his guitar in a gunny sack
+[00:54.00]他经常把吉他放在麻木袋里
+[00:54.00]And sit beneath the trees by the railroad track
+[00:56.00]坐在路边的树下
+[00:56.00]Oh the engineers saw him sitting in the shade
+[00:59.00]火车司机们经常看到他坐在树荫里
+[00:59.00]Playing to the rhythm that the drivers made
+[01:02.00]和着火车的节奏演奏
+[01:02.00]People passing by would stop and say
+[01:05.00]过往的行人都会停下脚步说
+[01:05.00]Oh my that little country boy could play
+[01:08.00]那位乡村小男孩会弹琴
+[01:08.00]Go Go  Go Johnny Go Go
+[01:12.00]Johnny前进
+[01:12.00]Go Johnny Go Go
+[01:15.00]Johnny前进
+[01:15.00]Go Johnny Go Go
+[01:18.00]Johnny前进
+[01:18.00]Go Johnny Go Go
+[01:21.00]Johnny前进
+[01:21.00]Johnny B  Goode
+[02:00.00]Johnny BGoode
+[02:00.00]His mother told him someday you would be a man
+[02:03.00]他妈妈告诉他总有一天会长大成人
+[02:03.00]And you would be the leader of a big old band
+[02:05.00]并会成为一个乐队的领导者
+[02:05.00]Many people coming from miles around
+[02:08.00]很多人从千里之外赶来
+[02:08.00]To hear you play your music 'til the sun go down
+[02:11.00]听你的演奏直到夜幕降临
+[02:11.00]Maybe someday your name would be in lights
+[02:14.00]或许有一天你的名字会家喻户晓
+[02:14.00]Saying Johnny B  Good tonight
+[02:16.00]人人都说 今晚Johnny B弹得真好
+[02:16.00]Go Go Go Johnny Go
+[02:18.00]Johnny前进
+[02:18.00]Go Go Go Johnny Go
+[02:22.00]Johnny前进
+[02:22.00]Go Go Go Johnny Go
+[02:25.00]Johnny前进
+[02:25.00]Go Go Go Johnny Go
+[02:28.00]Johnny前进
+[02:28.00]Go Johnny B  Goode
+[02:33.00]Johnny BGoode前进
+</script>
+
+<script type="text/plain" id="lrc-guns">
+[00:00.00] 作词 : Billie Joe Armstrong/David Bowie/John Philips/Mike Dirnt/Tre Cool
+[00:00.37] 作曲 : Billie Joe Armstrong/David Bowie/John Philips/Mike Dirnt/Tre Cool
+[00:00.74] 制作人 : Billie Joe Armstrong/Butch Vig/Mike Dirnt/Tre Cool
+[00:01.12]21 Guns
+[00:07.89]Green Day
+[00:15.12]3.2.1
+[00:17.64]Do you know what's worth fighting for,
+[00:23.64]When it's not worth dying for?
+[00:29.69]Does it take your breath away
+[00:34.36]And you feel yourself suffocating?
+[00:41.95]Does the pain weigh out the pride?
+[00:39.99]
+[00:47.99]And you look for a place to hide?
+[00:53.99]Did someone break your heart inside?
+[00:58.64]You're in ruins
+[01:05.40]One, 21 guns
+[01:02.88]
+[01:09.86]Lay down your arms
+[01:12.84]Give up the fight
+[01:17.11]One, 21 guns
+[01:21.60]Throw up your arms into the sky,
+[01:28.42]You and I
+[01:35.72]When you're at the end of the road
+[01:33.26]
+[01:41.99]And you lost all sense of control
+[01:47.95]And you're throughts have taken their toll
+[01:54.11]When your mind breaks the spirit of your soul
+[02:00.33]Your faith walks on broken glass
+[02:06.19]And the hangover doesn't pass
+[02:12.16]Nothing's ever built to last
+[02:16.72]You're in ruins
+[02:23.49]One, 21 guns
+[02:20.71]
+[02:27.95]Lay down your arms
+[02:30.89]Give up the fight
+[02:35.35]One, 21 guns
+[02:39.69]Throw up your arms into the sky,
+[02:46.47]You and I
+[02:53.75]Did you try to live on your own
+[02:51.13]
+[02:59.50]When you burned down the house and home?
+[03:05.27]Did you stand too close to the fire?
+[03:09.68]Like a liar looking for forgiveness from a stone
+[03:57.91]When it's time to live and let die
+[03:55.58]
+[04:03.96]And you can't get another try
+[04:09.90]Something inside this heart has died
+[04:14.78]You're in ruins
+[04:21.60]One, 21 guns
+[04:18.03]
+[04:25.79]Lay down your arms
+[04:28.77]Give up the fight
+[04:32.51]One, 21 guns
+[04:37.56]Throw up your arms into the sky,
+[04:44.98]One, 21 guns
+[04:49.37]Lay down your arms
+[04:52.32]Give up the fight
+[04:56.75]One, 21 guns
+[05:01.09]Throw up your arms into the sky,
+[05:07.81]You and I
+[05:16.25]END
+[05:46.00] 音频助理 : Keith Armstrong/Nik Karpen/Wesley Seidman
+[05:46.41] 音频工程师 : Brad Townsend/Chris Dugan
+[05:46.83] 主人声 : Billie Joe Armstrong
+[05:47.24] 和声 : Mike Dirnt
+[05:47.66] 吉他 : Billie Joe Armstrong
+[05:48.08] 鼓 : Tre Cool
+[05:48.49] 钢琴 : Jason Freese
+[05:48.91] 弦乐指挥 : Patrick Warren
+[05:49.32] 母带工程师 : Ted Jensen
+[05:49.74] 低音吉他 : Mike Dirnt
+[05:50.16] 混音工程师 : Chris Lord-Alge
+[05:50.57] 附加制作 : Andrew Schubert/Brad Kobylczak/Joe McGrath
+</script>
+
+<script type="text/plain" id="lrc-freebird">
+[00:00.00] 作词 : Ronnie Van Zant/Allen Collins
+[00:01.00] 作曲 : Ronnie Van Zant/Allen Collins
+[01:08.76]If I leave here tomorrow
+[01:16.93]would you still remember me
+[01:24.91]For I must be travelling on now
+[01:33.06]there's too many places I gotta see
+[01:41.06]And if I stay here with you girl
+[01:49.52]things just wouldn't be the same
+[01:57.34]Cause I'm as free as a bird now
+[02:05.36]and this bird you cannot change
+[02:13.72]and the bird you cannot change
+[02:21.20]and this bird you cannot change
+[02:28.98]Lord knows I can't change
+[03:08.98]Bye bye baby it's been sweet love
+[03:17.13]though this feeling I can't change
+[03:25.03]Please don't take it so badly
+[03:33.15]coz the Lord knows I must play
+[03:41.14]If I stay here with you girl
+[03:49.18]things just couldn't be the same
+[03:57.06]Coz I'm as free as a bird now
+[04:04.91]and this bird you cannot change
+[04:13.22]and the bird you cannot change
+[04:20.75]and this bird you cannot change
+[04:28.25]Lord knows I can't change
+[04:35.75]Lord help me I can't change
+[04:44.56]Lord I can't change
+[04:48.90]Won't you fly high, Freebird, yeah
+</script>
+
+<script type="text/plain" id="lrc-come">
+[00:00.00]Come As You Are - Nirvana (涅槃)
+[00:03.00]   
+[00:03.00]Fightclub work
+[00:03.00]   
+[00:03.00]Come As You Are
+[00:18.00]来吧,保持现在的样子
+[00:18.00]Come 'As you are 'As you were
+[00:22.00]来吧,保持现在的样子,保持一惯的作风
+[00:22.00]As I want you to be
+[00:27.00]就似我想要你做的
+[00:27.00]As a friend 'As a friend
+[00:30.00]就似个朋友,就似个朋友
+[00:30.00]As an old enemy
+[00:35.00]就似个死对头
+[00:35.00]Take your time 'Hurry up
+[00:38.00]抓紧时间,快步飞奔
+[00:38.00]The Choice is your 'Dont' be late
+[00:42.00]选择在你,朝夕必争
+[00:42.00]Take a rest 'As a friend
+[00:46.00]歇歇脚吧,像个老朋友
+[00:46.00]As an old memoria 'memoria 'memoria 'memoria
+[01:05.00]就似旧回忆,回忆,回忆,回忆
+[01:05.00]Come 'Dowsed in mud 'Soaked in bleach
+[01:10.00]来吧,没入淤泥之中,浸泡在漂白粉里
+[01:10.00]As I want you to be
+[01:14.00]就似我想要你做的
+[01:14.00]As a trend 'As a friend
+[01:18.00]就似趋势,就似朋友
+[01:18.00]As an old memoria 'memoria 'memoria 'memoria
+[01:39.00]就似旧回忆,回忆,回忆,回忆
+[01:39.00]And I swear 'That I don't have a gun
+[01:45.00]我发誓我没有枪
+[01:45.00]No I don't have a gun 'No I don't have a gun
+[02:33.00]不，我没有枪,不，我没有枪
+[02:33.00]Memoria 'memoria 'memoria 'memoria (don't have a gun)
+[02:50.00]回忆,回忆,回忆,我没有枪
+[02:50.00]And I swear 'That I don't have a gun
+[02:55.00]我发誓我没有枪
+[02:55.00]No I don't have a gun 'No I don't have a gun
+[03:03.00]我没有枪,不，我没有枪
+[03:03.00]No I don't have a gun 'No i don't have a gun
+[03:15.00]我没有枪,不，我没有枪
+[03:15.00]Memoria
+[03:23.00]回忆
+[03:23.00]Memoria
+[03:28.00]回忆
+</script>
+
+<script type="text/plain" id="lrc-letitbe">
+[00:00.00]Let It Be (Remastered 2015) - The Beatles
+[00:06.00]   
+[00:06.00]Written by：John Lennon/Paul McCartney
+[00:13.00]   
+[00:13.00]When I find myself in times of trouble
+[00:16.00]每当我陷入困境
+[00:16.00]Mother Mary comes to me
+[00:19.00]玛利亚圣母就会走近我
+[00:19.00]Speaking words of wisdom let it be
+[00:26.00]说着充满智慧的话“顺其自然吧”
+[00:26.00]And in my hour of darkness
+[00:28.00]每当我处在黑暗的时候
+[00:28.00]She is standing right in front of me
+[00:32.00]她就会站在我面前
+[00:32.00]Speaking words of wisdom let it be
+[00:37.00]说着充满智慧的话“顺其自然吧”
+[00:37.00]Let it be let it be let it be let it be
+[00:45.00]顺其自然 顺其自然 顺其自然吧
+[00:45.00]Whisper words of wisdom let it be
+[00:51.00]低声说着充满智慧的话“顺其自然吧”
+[00:51.00]And when the broken hearted people living in the world agree
+[00:58.00]当伤心的人们 都一致同意时
+[00:58.00]There will be an answer let it be
+[01:05.00]这儿会有一个答案“顺其自然吧”
+[01:05.00]For though they may be parted
+[01:07.00]也许他们会分离
+[01:07.00]There is still a chance that they will see
+[01:11.00]总有机会再相聚
+[01:11.00]There will be an answer let it be
+[01:17.00]这儿会有一个答案“顺其自然吧”
+[01:17.00]Let it be let it be let it be let it be
+[01:25.00]顺其自然 顺其自然 顺其自然吧
+[01:25.00]There will be an answer let it be
+[01:31.00]这儿会有一个答案“顺其自然吧”
+[01:31.00]Let it be let it be let it be let it be
+[01:38.00]顺其自然 顺其自然 顺其自然吧
+[01:38.00]Whisper words of wisdom let it be
+[02:25.00]低声说着充满智慧的话“顺其自然吧”
+[02:25.00]Let it be let it be let it be yeah let it be
+[02:33.00]顺其自然 顺其自然 顺其自然吧
+[02:33.00]Whisper words of wisdom let it be
+[02:40.00]低声说着充满智慧的话“顺其自然吧”
+[02:40.00]And when the night is cloudy
+[02:43.00]即使在乌云密布的深夜
+[02:43.00]There is still a light that shines on me
+[02:47.00]依然会有一丝光照在我身上
+[02:47.00]Shine until tomorrow let it be
+[02:54.00]陪伴我直至天亮 顺其自然吧
+[02:54.00]I wake up to the sound of music
+[02:58.00]在音乐声中醒来
+[02:58.00]Mother Mary comes to me
+[03:01.00]玛利亚圣母就会走近我
+[03:01.00]Speaking words of wisdom let it be
+[03:07.00]说着充满智慧的话“顺其自然吧”
+[03:07.00]Let it be let it be let it be yeah let it be
+[03:15.00]顺其自然 顺其自然 顺其自然吧
+[03:15.00]There will be an answer let it be
+[03:21.00]这儿会有一个答案“顺其自然吧”
+[03:21.00]Let it be let it be let it be yeah let it be
+[03:29.00]顺其自然 顺其自然 顺其自然吧
+[03:29.00]Whisper words of wisdom let it be
+[03:34.00]低声说着充满智慧的话“顺其自然吧”
+</script>
+
+<script src="music.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

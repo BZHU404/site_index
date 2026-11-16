@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Tape 00 — Brian's Workshop</title>
+<link rel="icon" href="assets/badge-brian.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tape-00.css">
+</head>
+<body class="tape-page">
+<main class="tape-shell">
+  <a class="tape-back" href="roulette.html">← Back to the table</a>
+
+  <section class="tape-case" id="tapeCard" aria-labelledby="tapeTitle">
+    <div class="case-spine" aria-hidden="true">
+      <span>TAPE 00</span>
+      <b>SIDE A</b>
+    </div>
+
+    <div class="case-body">
+      <header class="jcard">
+        <div class="jcard-top">
+          <span class="jcard-brand">BRIAN'S WORKSHOP</span>
+          <span class="jcard-cat">C-60 · TYPE I</span>
+        </div>
+
+        <div class="jcard-title">
+          <h1 id="tapeTitle">Tape 00</h1>
+          <span class="jcard-side">SIDE A</span>
+        </div>
+
+        <p class="jcard-line">FOR YOU · PLAY LOUD</p>
+
+        <div class="jcard-meta">
+          <span class="barcode" aria-hidden="true"></span>
+          <span>STEREO · DOLBY NR</span>
+        </div>
+      </header>
+
+      <div class="case-window">
+        <div class="case-glare" aria-hidden="true"></div>
+        <div class="tape-cassette" aria-hidden="true">
+          <div class="tape-body">
+            <span class="screw s1"></span><span class="screw s2"></span>
+            <span class="screw s3"></span><span class="screw s4"></span>
+            <span class="tape-top-label">TAPE 00</span>
+            <span class="tape-notch"></span>
+            <span class="tape-amp" aria-hidden="true">&amp;</span>
+
+            <div class="tape-reels">
+              <span class="reel"><i></i></span>
+              <span class="reel"><i></i></span>
+            </div>
+
+            <div class="tape-window"><span></span><span></span></div>
+            <div class="tape-strip">SIDE A · C-60 · NORMAL BIAS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck">
+        <div class="deck-row">
+          <span class="deck-led" aria-hidden="true"></span>
+          <span class="deck-label">CASSETTE DECK · AUTO REVERSE</span>
+          <span class="deck-counter" id="tapeCounter" aria-hidden="true">0000</span>
+        </div>
+
+        <div class="deck-vu" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <p class="tape-status" id="tapeStatus" role="status">INSERT ACCESS CODE</p>
+
+        <form class="tape-form" id="tapeForm" novalidate>
+          <label class="sr-only" for="tapeCode">Access code</label>
+          <input class="tape-input" id="tapeCode" type="password" name="code" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ACCESS CODE" aria-describedby="tapeError">
+          <button class="btn tape-submit" id="tapeSubmit" type="submit">▶ PLAY</button>
+        </form>
+
+        <p class="tape-error" id="tapeError" role="alert"></p>
+
+        <div class="tape-message" id="tapeMessage" tabindex="-1" aria-live="polite" hidden>
+          <div class="message-paper">
+            <p class="tape-granted">ACCESS GRANTED · SIDE A</p>
+            <p class="tape-love" id="tapeLove"></p>
+            <p class="tape-sign">— B.</p>
+          </div>
+          <button class="btn tape-rewind" id="tapeLock" type="button">↺ REWIND</button>
+        </div>
+      </div>
+
+      <p class="tape-fine">NO INDEX · NO HINTS · HAND-CODED</p>
+    </div>
+  </section>
+</main>
+<script src="argon2-bundled.min.js"></script>
+<script src="tape-00.js"></script>
+</body>
+</html>

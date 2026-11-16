@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian's Workshop — About</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v26M3 16h26M6.8 6.8l18.4 18.4M25.2 6.8L6.8 25.2' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>
+try {
+  var savedTextSize = parseInt(localStorage.getItem("bw_textsize"), 10) || 0;
+  if (savedTextSize === 1 || savedTextSize === 2) {
+    document.documentElement.classList.add("textsize-" + savedTextSize);
+  }
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="psych.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="mast-edge mast-edge-left">
+      <span>EST. 2026</span>
+      <span>REV. 2026.11</span>
+    </div>
+    <div class="mast-center">
+      <p class="mast-kicker">☆ A HAND-CODED PERSONAL HOMEPAGE ☆</p>
+      <p class="mast-title"><a href="home.html">Brian's Workshop</a></p>
+      <p class="mast-sub">— DIY · keyboards · audio · cocktails —</p>
+      <p class="mast-meta">HTML + CSS + A LITTLE JAVASCRIPT · NO FRAMEWORKS</p>
+    </div>
+    <div class="mast-edge mast-edge-right">
+      <span>PAGE 02</span>
+      <span>HAND-CODED</span>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Site news ticker">
+    <div class="ticker-track">
+      <span>★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+      <span aria-hidden="true">★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Primary">
+    <a href="home.html">Home</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="help.html">Help</a>
+    <a href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+    <a href="music.html">Music</a>
+    <a href="roulette.html">Game</a>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Site sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE NAV ·</h2>
+        <ul class="navlist">
+          <li><a href="home.html">» Home</a></li>
+          <li><a href="about.html">» About</a></li>
+          <li><a href="help.html">» Help</a></li>
+          <li><a class="hot" href="blog.html">» Weblog</a> <span class="new blink">NEW!</span></li>
+          <li><a href="music.html">» Music</a> <span class="new">BETA</span></li>
+          <li><a href="roulette.html">» Game</a> <span class="new">NEW!</span></li>
+          <li><a href="write.html">» Writing desk</a> <span class="new">LOCAL</span></li>
+        </ul>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE STATS ·</h2>
+        <div class="stats">
+          <p class="stat-label">YOU ARE VISITOR</p>
+          <p class="counter" id="hitCount" title="Visitor counter">000000</p>
+          <p class="stat-row"><span>VISITS TODAY</span> <b id="todayCount">—</b></p>
+          <p class="stat-row"><span>DAYS ONLINE</span> <b id="daysOnline">—</b></p>
+          <p class="stat-row"><span>ONLINE SINCE</span> <b>2026.11.02</b></p>
+        </div>
+      </section>
+
+      <section class="sidebox textsize-box">
+        <h2 class="sidebox-title">· TEXT SIZE ·</h2>
+        <div class="textsize" role="group" aria-label="Text size">
+          <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+          <span class="textsize-value" aria-live="polite">100%</span>
+          <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· THIS SITE ·</h2>
+        <a class="badge88" href="home.html" aria-label="Brian's Workshop — home">
+          <span>BRIAN'S<br>WORKSHOP</span>
+          <small>EST. 2026</small>
+        </a>
+        <div class="badge-row">
+          <a class="mini-badge mb-netscape" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Netscape<br>Now!</a>
+          <span class="mini-badge mb-y2k">Y2K<br>Ready</span>
+        </div>
+        <div class="badge-row">
+          <span class="mini-badge mb-notepad">Made with<br>Notepad</span>
+          <button class="mini-badge mb-devil devil-badge" type="button" aria-label="Devil Site">Devil<br>Site</button>
+        </div>
+        <p class="tiny center">Hand-coded. No frameworks.</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· MY OTHER SITES ·</h2>
+        <div class="site-icons">
+          <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener" title="wood_map"><img src="assets/wood.png" alt="wood_map"></a>
+          <a href="https://BZHU404.github.io/chinamed_map" target="_blank" rel="noopener" title="chinamed_map"><img src="assets/chinamed.png" alt="chinamed_map"></a>
+          <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener" title="Poison_map"><img src="assets/poison.png" alt="Poison_map"></a>
+          <a href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Flower_map"><img src="assets/flower.svg" alt="Flower_map"></a>
+          <a href="https://BZHU404.github.io/lux_map" target="_blank" rel="noopener" title="lux_map"><img src="assets/lux.png" alt="lux_map"></a>
+          <a href="https://BZHU404.github.io/alcohol_map" target="_blank" rel="noopener" title="酒谱 alcohol_map" aria-label="酒谱 alcohol_map"><img src="assets/wine-logo.svg" alt="酒谱 — alcohol map logo"></a>
+          <a class="logo-tile" href="https://BZHU404.github.io/perfume_map/" target="_blank" rel="noopener" title="香谱 perfume_map" aria-label="香谱 perfume_map"><img src="assets/perfume-logo.webp" alt="香谱 — perfume map logo"></a>
+          <a class="site-icon-text" href="https://github.com/BZHU404" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GH</a>
+          <a class="site-icon-text" href="https://github.com/BZHU404?tab=repositories" target="_blank" rel="noopener" title="All repositories" aria-label="All repositories">★</a>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SUPPORT ·</h2>
+        <a class="support-mini" href="#support">
+          <img src="assets/coffee-cup.png" alt="A cup of coffee">
+          <span>Buy me<br>a coffee</span>
+        </a>
+        <p class="tiny center">本站永久免费</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· ADVERTISEMENT ·</h2>
+        <div class="ad-120">
+          <b>YOUR AD<br>HERE</b>
+          <span class="blink">CHEAP!</span>
+          <a href="https://github.com/BZHU404" target="_blank" rel="noopener">inquire »</a>
+        </div>
+      </section>
+
+      <p class="sidebar-note">This site looks best with a cup of coffee.</p>
+    </aside>
+
+    <main id="main" class="content">
+
+      <p class="crumb"><a href="home.html">HOME</a> <span class="sep">/</span> ABOUT</p>
+
+      <div class="about-top">
+        <div class="about-intro">
+          <h1>About</h1>
+          <p class="statement">Crafting whatever I want online or offline.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#links">Links</a>
+            <a class="btn" href="help.html">How I can help</a>
+            <a class="btn btn-hot" href="blog.html">Weblog</a>
+          </div>
+        </div>
+
+        <section class="memory" aria-label="Flip and match memory game">
+          <h3>Flip &amp; match</h3>
+          <p class="memory-sub">Two minutes to kill? Flip the tiles and find the four pairs.</p>
+          <div class="board" id="memoryBoard"></div>
+          <p class="memory-status" id="memoryStatus" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <h3 class="group-head">The workshops</h3>
+
+      <div class="brands">
+        <!-- Amos Lab -->
+        <div class="brand-col">
+          <img class="brand-logo" src="assets/logo-amos.png" alt="Amos Lab logo">
+          <div class="brand-name">Amos Lab</div>
+          <div class="tilewall">
+            <span class="tile"></span><span class="tile has-img"><img src="assets/amos-tile.png" alt="Amos Lab notebook"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+          </div>
+        </div>
+
+        <!-- Simon Workshop -->
+        <div class="brand-col">
+          <img class="brand-logo" src="assets/logo-simon.png" alt="Simon Workshop logo">
+          <div class="brand-name">Simon<br>Workshop</div>
+          <div class="tilewall">
+            <a class="tile has-img" href="project.html" aria-label="Cherry keyboard project"><img src="assets/cherry-floppy.png" alt="Cherry floppy disk — keyboard project"></a><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+          </div>
+        </div>
+
+        <!-- Blackstar 20th Tech -->
+        <div class="brand-col">
+          <img class="brand-logo" src="assets/logo-blackstar.png" alt="Blackstar 20th Tech logo">
+          <div class="brand-name">Blackstar<small>20th Tech&trade;</small></div>
+          <div class="tilewall">
+            <a class="tile has-img" href="https://bzhu404.github.io/wood_map" target="_blank" rel="noopener" aria-label="Wood map"><img src="assets/wood.png" alt="Wood map — Chinese character 木"></a>
+            <a class="tile has-img" href="https://bzhu404.github.io/Poison_map/" target="_blank" rel="noopener" aria-label="Poison map"><img src="assets/poison.png" alt="Poison map — Chinese character 毒"></a>
+            <a class="tile has-img" href="https://bzhu404.github.io/chinamed_map/" target="_blank" rel="noopener" aria-label="Chinese medicine map"><img src="assets/chinamed.png" alt="Chinese medicine map — Chinese character 药"></a>
+            <a class="tile has-img" href="https://bzhu404.github.io/Flower_map/" target="_blank" rel="noopener" aria-label="Flower map"><img src="assets/flower.svg" alt="Flower map — diamond icon"></a>
+            <a class="tile has-img" href="https://bzhu404.github.io/lux_map" target="_blank" rel="noopener" aria-label="Lux map"><img src="assets/lux.png" alt="Lux map — gold diamond app icon"></a><a class="tile has-img" href="https://bzhu404.github.io/alcohol_map" target="_blank" rel="noopener" aria-label="Alcohol map"><img src="assets/wine-logo.svg" alt="酒谱 — wine glass logo"></a><a class="tile has-img tile-logo" href="https://bzhu404.github.io/perfume_map/" target="_blank" rel="noopener" aria-label="Perfume map"><img src="assets/perfume-logo.webp" alt="香谱 — perfume map logo"></a>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+            <span class="tile"></span><span class="tile"></span>
+          </div>
+        </div>
+      </div>
+
+      <section class="links-merged" id="links">
+        <h2 class="group-head">Links &amp; Button Wall · 友情链接</h2>
+
+      <div class="cool-award">
+        <b>★ COOL SITE OF THE DAY ★</b>
+        <small>awarded by the Webmaster's Union, probably</small>
+      </div>
+
+      <section class="panel">
+        <h2 class="panel-head">My Other Sites · 我的其他站点</h2>
+        <div class="panel-body">
+          <div class="link-cards">
+        <a class="link-card" href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">
+          <img src="assets/wood.png" alt="wood_map">
+          <span><b>wood_map</b><small>Wood, grain by grain. 木材地图</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/chinamed_map" target="_blank" rel="noopener">
+          <img src="assets/chinamed.png" alt="chinamed_map">
+          <span><b>chinamed_map</b><small>Herbs, roots, old prescriptions. 中国医药地图</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener">
+          <img src="assets/poison.png" alt="Poison_map">
+          <span><b>Poison_map</b><small>Things that bite back. 毒物地图</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/alcohol_map" target="_blank" rel="noopener">
+          <img src="assets/wine-logo.svg" alt="alcohol_map">
+          <span><b>alcohol_map</b><small>Bottles, notes, bad decisions. 酒谱</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/lux_map" target="_blank" rel="noopener">
+          <img src="assets/lux.png" alt="lux_map">
+          <span><b>lux_map</b><small>Shiny things, catalogued. 奢侈品地图</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener">
+          <img src="assets/flower.svg" alt="Flower_map">
+          <span><b>Flower_map</b><small>Flowers for every season. 花卉地图</small></span>
+        </a>
+        <a class="link-card" href="https://BZHU404.github.io/perfume_map/" target="_blank" rel="noopener">
+          <img class="logo-thumb" src="assets/perfume-logo.webp" alt="香谱 perfume map">
+          <span><b>perfume_map</b><small>Notes in a bottle. 香谱</small></span>
+        </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-head">The Button Wall · 徽章墙</h2>
+        <div class="panel-body">
+          <div class="button-wall">
+            <a class="wall-badge wall-image" href="home.html" aria-label="Brian's Workshop home"><img src="assets/badge-brian.svg" width="88" height="31" alt="Brian's Workshop"></a>
+            <a class="wall-badge wb-netscape" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Netscape<br>Now!</a>
+            <span class="wall-badge wb-y2k">Y2K<br>Ready</span>
+            <span class="wall-badge wb-notepad">Made with<br>Notepad</span>
+            <button class="wall-badge wb-devil devil-badge" type="button" aria-label="Devil Site">Devil<br>Site</button>
+            <span class="wall-badge wb-cool">Cool Site<br>of the Day</span>
+            <a class="wall-badge wb-coffee" href="#support">Powered by<br>Coffee</a>
+            <span class="wall-badge wb-800">Best viewed<br>800×600</span>
+          </div>
+          <p class="tiny center">Take one. They are 88×31 and weigh nothing.</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-head">Link to me · 链接到本站</h2>
+        <div class="panel-body">
+          <p class="tiny">Copy this into your links page. Change the URL if you deploy somewhere else.</p>
+          <pre class="codebox"><code id="linkCode">&lt;a href="https://BZHU404.github.io/brians-workshop/"&gt;&lt;img src="https://BZHU404.github.io/brians-workshop/assets/badge-brian.svg" width="88" height="31" alt="Brian's Workshop"&gt;&lt;/a&gt;</code></pre>
+          <div class="link-actions">
+            <button class="btn" type="button" id="copyLink">Copy code</button>
+            <a class="btn" href="assets/badge-brian.svg" target="_blank" rel="noopener">Open badge</a>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      <section class="ad-block" aria-label="Advertisement">
+        <span class="ad-label">· ADVERTISEMENT ·</span>
+        <a class="ad-468" href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">
+          <span class="ad-468-thumbs">
+            <img src="assets/wood.png" alt="">
+            <img src="assets/poison.png" alt="">
+            <img src="assets/flower.svg" alt="">
+          </span>
+          <span class="ad-468-copy">
+            <b>The Map Room</b>
+            <small>Seven hand-made maps. Zero algorithms. No cookies.</small>
+          </span>
+          <span class="ad-468-cta flash">Visit!</span>
+        </a>
+      </section>
+
+      <section class="support" id="support">
+        <h2 class="support-title">· Support this site · 支持本站 ·</h2>
+        <div class="support-grid">
+          <div class="support-qr">
+            <a href="assets/coffee-qr.png" target="_blank" rel="noopener" title="Open the coffee QR code">
+              <img src="assets/coffee-qr.png" alt="Coffee QR code — scan to support the site">
+            </a>
+            <span>Scan / click to enlarge</span>
+          </div>
+          <div class="support-copy">
+            <h3>Buy me a coffee</h3>
+            <p>本站永久免费。如果这里的东西对你有用，请我喝一杯咖啡。</p>
+            <p class="support-small">Every cup becomes domain renewals, solder, and another bad idea.</p>
+            <a class="btn btn-small" href="assets/coffee-qr.png" target="_blank" rel="noopener">Open the QR code</a>
+          </div>
+          <div class="support-cup">
+            <img src="assets/coffee-cup.png" alt="A cup of coffee">
+            <span>Thanks</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="webring" id="webring" aria-label="Webring">
+        <span class="webring-title">· The Tinkerer's Webring ·</span>
+        <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">&laquo; prev</a>
+        <span class="sep">|</span>
+        <a id="randomSite" href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Random map site">random</a>
+        <span class="sep">|</span>
+        <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener">next &raquo;</a>
+      </nav>
+
+      <p class="page-end"><span class="dot">■</span> <a href="#main">Back to top</a> <span class="dot">■</span></p>
+
+    </main>
+  </div>
+
+  <footer class="sitefooter">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="blog.html">Weblog</a>
+      <a href="music.html">Music</a>
+      <a href="roulette.html">Game</a>
+      <a href="write.html">Writing desk</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="footer-sponsor">Brought to you by <b>coffee</b> and <b>bad ideas</b> · <a href="#support">Buy me a coffee</a></p>
+    <p class="footer-line">LAST UPDATED: 2026.11.12 &nbsp;|&nbsp; BEST VIEWED: NETSCAPE NAVIGATOR 3.0 / 1024 × 768</p>
+    <p class="footer-fine">Copyright © 2026 Brian. All Rights Reserved. 本页面由 Notepad 手工编写。<br>
+    <span class="construction blink">▲ 本站建设中 ▲</span></p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var faces = [
+    'assets/wood.png',
+    'assets/poison.png',
+    'assets/chinamed.png',
+    'assets/flower.svg'
+  ];
+  var deck = faces.concat(faces);
+  for (var i = deck.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+  }
+  var board = document.getElementById('memoryBoard');
+  var status = document.getElementById('memoryStatus');
+  var first = null, lock = false, done = 0;
+  deck.forEach(function (src) {
+    var card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'card';
+    card.innerHTML = '<span class="face back" aria-hidden="true"></span>' +
+      '<span class="face front"><img src="' + src + '" alt="" draggable="false"></span>';
+    card.setAttribute('aria-label', 'Flip memory card');
+    card.setAttribute('aria-pressed', 'false');
+    card.addEventListener('click', function () {
+      if (lock || card.classList.contains('flipped')) return;
+      card.classList.add('flipped');
+      card.setAttribute('aria-pressed', 'true');
+      if (!first) { first = card; return; }
+      var match = first.querySelector('img').getAttribute('src') === card.querySelector('img').getAttribute('src');
+      if (match) {
+        first.classList.add('matched');
+        card.classList.add('matched');
+        first.setAttribute('aria-label', 'Matched memory card');
+        card.setAttribute('aria-label', 'Matched memory card');
+        first = null; done++;
+        if (done === faces.length) status.textContent = 'All pairs found — nice.';
+      } else {
+        lock = true;
+        var a = first;
+        setTimeout(function () {
+          a.classList.remove('flipped');
+          card.classList.remove('flipped');
+          a.setAttribute('aria-pressed', 'false');
+          card.setAttribute('aria-pressed', 'false');
+          lock = false; first = null;
+        }, 700);
+      }
+    });
+    board.appendChild(card);
+  });
+})();
+</script>
+
+<script src="links.js"></script>
+<script src="site.js"></script>
+<script src="psych.js"></script>
+</body>
+</html>

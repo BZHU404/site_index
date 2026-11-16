@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian's Workshop — Home</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v26M3 16h26M6.8 6.8l18.4 18.4M25.2 6.8L6.8 25.2' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>
+try {
+  var savedTextSize = parseInt(localStorage.getItem("bw_textsize"), 10) || 0;
+  if (savedTextSize === 1 || savedTextSize === 2) {
+    document.documentElement.classList.add("textsize-" + savedTextSize);
+  }
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="psych.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page home">
+
+  <header class="masthead">
+    <div class="mast-edge mast-edge-left">
+      <span>EST. 2026</span>
+      <span>REV. 2026.11</span>
+    </div>
+    <div class="mast-center">
+      <p class="mast-kicker">☆ A HAND-CODED PERSONAL HOMEPAGE ☆</p>
+      <p class="mast-title"><a href="home.html">Brian's Workshop</a></p>
+      <p class="mast-sub">— DIY · keyboards · audio · cocktails —</p>
+      <p class="mast-meta">HTML + CSS + A LITTLE JAVASCRIPT · NO FRAMEWORKS</p>
+    </div>
+    <div class="mast-edge mast-edge-right">
+      <span>PAGE 01</span>
+      <span>HAND-CODED</span>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Site news ticker">
+    <div class="ticker-track">
+      <span>★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+      <span aria-hidden="true">★ WELCOME TO BRIAN'S WORKSHOP ★ DIY PROJECTS · KEYBOARD REPAIRS · AUDIO GEAR · COCKTAILS ★ NEW: THE WEBLOG IS OPEN — NOTES FROM THE WORKBENCH ★ MUSIC BOX: 10 TRACKS ONLINE — FULL PLAYLIST ★ NEW: DEVIL'S ROULETTE — DO NOT TRY THIS AT HOME ★ LINKS & BUTTON WALL ON ABOUT ★ NO ALGORITHMS, NO POP-UPS, JUST TINKERING ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 1024×768 ★ THIS SITE IS ALWAYS UNDER CONSTRUCTION ★</span>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Primary">
+    <a href="home.html" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+    <a href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+    <a href="music.html">Music</a>
+    <a href="roulette.html">Game</a>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Site sidebar">
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE NAV ·</h2>
+        <ul class="navlist">
+          <li><a href="home.html">» Home</a></li>
+          <li><a href="about.html">» About</a></li>
+          <li><a href="help.html">» Help</a></li>
+          <li><a class="hot" href="blog.html">» Weblog</a> <span class="new blink">NEW!</span></li>
+          <li><a href="music.html">» Music</a> <span class="new">BETA</span></li>
+          <li><a href="roulette.html">» Game</a> <span class="new">NEW!</span></li>
+          <li><a href="write.html">» Writing desk</a> <span class="new">LOCAL</span></li>
+        </ul>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SITE STATS ·</h2>
+        <div class="stats">
+          <p class="stat-label">YOU ARE VISITOR</p>
+          <p class="counter" id="hitCount" title="Visitor counter">000000</p>
+          <p class="stat-row"><span>VISITS TODAY</span> <b id="todayCount">—</b></p>
+          <p class="stat-row"><span>DAYS ONLINE</span> <b id="daysOnline">—</b></p>
+          <p class="stat-row"><span>ONLINE SINCE</span> <b>2026.11.02</b></p>
+        </div>
+      </section>
+
+      <section class="sidebox textsize-box">
+        <h2 class="sidebox-title">· TEXT SIZE ·</h2>
+        <div class="textsize" role="group" aria-label="Text size">
+          <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+          <span class="textsize-value" aria-live="polite">100%</span>
+          <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+        </div>
+      </section>
+
+      <section class="sidebox system-box">
+        <h2 class="sidebox-title">· YOUR SYSTEM ·</h2>
+        <ul class="syslist">
+          <li><span>BROWSER</span><b data-sys="browser">…</b></li>
+          <li><span>SCREEN</span><b data-sys="screen">…</b></li>
+          <li><span>COLORS</span><b data-sys="colors">…</b></li>
+          <li><span>CLOCK</span><b data-sys="time">…</b></li>
+        </ul>
+        <p class="tiny center">Best viewed in Netscape 3.0</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· THIS SITE ·</h2>
+        <a class="badge88" href="home.html" aria-label="Brian's Workshop — home">
+          <span>BRIAN'S<br>WORKSHOP</span>
+          <small>EST. 2026</small>
+        </a>
+        <div class="badge-row">
+          <a class="mini-badge mb-netscape" href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Netscape<br>Now!</a>
+          <span class="mini-badge mb-y2k">Y2K<br>Ready</span>
+        </div>
+        <div class="badge-row">
+          <span class="mini-badge mb-notepad">Made with<br>Notepad</span>
+          <button class="mini-badge mb-devil devil-badge" type="button" aria-label="Devil Site">Devil<br>Site</button>
+        </div>
+        <p class="tiny center">Hand-coded. No frameworks.</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· MY OTHER SITES ·</h2>
+        <div class="site-icons">
+          <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener" title="wood_map"><img src="assets/wood.png" alt="wood_map"></a>
+          <a href="https://BZHU404.github.io/chinamed_map" target="_blank" rel="noopener" title="chinamed_map"><img src="assets/chinamed.png" alt="chinamed_map"></a>
+          <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener" title="Poison_map"><img src="assets/poison.png" alt="Poison_map"></a>
+          <a href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Flower_map"><img src="assets/flower.svg" alt="Flower_map"></a>
+          <a href="https://BZHU404.github.io/lux_map" target="_blank" rel="noopener" title="lux_map"><img src="assets/lux.png" alt="lux_map"></a>
+          <a href="https://BZHU404.github.io/alcohol_map" target="_blank" rel="noopener" title="酒谱 alcohol_map" aria-label="酒谱 alcohol_map"><img src="assets/wine-logo.svg" alt="酒谱 — alcohol map logo"></a>
+          <a class="logo-tile" href="https://BZHU404.github.io/perfume_map/" target="_blank" rel="noopener" title="香谱 perfume_map" aria-label="香谱 perfume_map"><img src="assets/perfume-logo.webp" alt="香谱 — perfume map logo"></a>
+          <a class="site-icon-text" href="https://github.com/BZHU404" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GH</a>
+          <a class="site-icon-text" href="https://github.com/BZHU404?tab=repositories" target="_blank" rel="noopener" title="All repositories" aria-label="All repositories">★</a>
+        </div>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· SUPPORT ·</h2>
+        <a class="support-mini" href="#support">
+          <img src="assets/coffee-cup.png" alt="A cup of coffee">
+          <span>Buy me<br>a coffee</span>
+        </a>
+        <p class="tiny center">本站永久免费</p>
+      </section>
+
+      <section class="sidebox">
+        <h2 class="sidebox-title">· ADVERTISEMENT ·</h2>
+        <div class="ad-120">
+          <b>YOUR AD<br>HERE</b>
+          <span class="blink">CHEAP!</span>
+          <a href="https://github.com/BZHU404" target="_blank" rel="noopener">inquire »</a>
+        </div>
+      </section>
+
+      <p class="sidebar-note">This site looks best with a cup of coffee.</p>
+    </aside>
+
+    <main id="main" class="content">
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">★ WELCOME TO MY HOMEPAGE ★</p>
+          <h1>Brian's Workshop</h1>
+          <p class="lede">An ordinary 9th-grade DIY enthusiast and researcher of computer peripherals and audio equipment.</p>
+          <p class="lede">Follow content covering various DIY projects, equipment operation, music gear reviews, and cocktail-making videos.</p>
+          <div class="hero-actions">
+            <a class="btn" href="about.html">About me</a>
+            <a class="btn" href="help.html">How I can help</a>
+            <a class="btn btn-hot" href="blog.html">Weblog <span class="new blink">NEW!</span></a>
+          </div>
+        </div>
+        <div class="hero-disk">
+          <div class="disk-station">
+            <div class="disk-side">
+              <p class="disk-label">SIMON WORKSHOP · 1.44 MB</p>
+              <div class="floppy-frame">
+                <a class="floppy-link" href="about.html" aria-label="Floppy disk button: go to About">
+                  <img class="floppy" src="assets/floppy-trim.png" alt="Simon Workshop floppy disk — Click to know more about my projects">
+                </a>
+              </div>
+              <p class="disk-hint">click the disk → about</p>
+            </div>
+            <aside class="disk-textsize textsize" role="group" aria-label="Text size">
+              <span class="disk-textsize-title">TEXT<br>SIZE</span>
+              <button type="button" data-textsize="1" aria-label="Increase text size">A+</button>
+              <span class="textsize-value" aria-live="polite">100%</span>
+              <button type="button" data-textsize="-1" aria-label="Decrease text size">A&minus;</button>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <div class="home-grid">
+        <section class="panel">
+          <h2 class="panel-head">Latest from the weblog</h2>
+          <div class="panel-body">
+            <div class="latest-posts" id="latestPosts">
+              <p class="latest-excerpt">Loading entries…</p>
+            </div>
+            <p class="more-link"><a href="blog.html">Read all entries »</a></p>
+          </div>
+        </section>
+
+        <section class="panel panel-yellow">
+          <h2 class="panel-head">Start here</h2>
+          <div class="panel-body">
+            <ul class="start-list">
+              <li><a href="about.html">About</a><span>Who I am, and the three workshops.</span></li>
+              <li><a href="help.html">Help</a><span>Things I can help you fix or build.</span></li>
+              <li><a href="blog.html">Weblog</a><span>Notes from the workbench.</span></li>
+              <li><a href="music.html">Music</a><span>All ten tracks online, with rolling lyrics.</span></li>
+              <li><a href="roulette.html">Game</a><span>Devil's roulette. Three lives, one live round.</span></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <p class="construction"><span class="blink">▲</span> This site is always under construction <span class="blink">▲</span></p>
+
+      <section class="ad-block" aria-label="Advertisement">
+        <span class="ad-label">· ADVERTISEMENT ·</span>
+        <a class="ad-468" href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">
+          <span class="ad-468-thumbs">
+            <img src="assets/wood.png" alt="">
+            <img src="assets/poison.png" alt="">
+            <img src="assets/flower.svg" alt="">
+          </span>
+          <span class="ad-468-copy">
+            <b>The Map Room</b>
+            <small>Seven hand-made maps. Zero algorithms. No cookies.</small>
+          </span>
+          <span class="ad-468-cta flash">Visit!</span>
+        </a>
+      </section>
+
+      <section class="support" id="support">
+        <h2 class="support-title">· Support this site · 支持本站 ·</h2>
+        <div class="support-grid">
+          <div class="support-qr">
+            <a href="assets/coffee-qr.png" target="_blank" rel="noopener" title="Open the coffee QR code">
+              <img src="assets/coffee-qr.png" alt="Coffee QR code — scan to support the site">
+            </a>
+            <span>Scan / click to enlarge</span>
+          </div>
+          <div class="support-copy">
+            <h3>Buy me a coffee</h3>
+            <p>本站永久免费。如果这里的东西对你有用，请我喝一杯咖啡。</p>
+            <p class="support-small">Every cup becomes domain renewals, solder, and another bad idea.</p>
+            <a class="btn btn-small" href="assets/coffee-qr.png" target="_blank" rel="noopener">Open the QR code</a>
+          </div>
+          <div class="support-cup">
+            <img src="assets/coffee-cup.png" alt="A cup of coffee">
+            <span>Thanks</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="webring" id="webring" aria-label="Webring">
+        <span class="webring-title">· The Tinkerer's Webring ·</span>
+        <a href="https://BZHU404.github.io/wood_map" target="_blank" rel="noopener">&laquo; prev</a>
+        <span class="sep">|</span>
+        <a id="randomSite" href="https://BZHU404.github.io/Flower_map" target="_blank" rel="noopener" title="Random map site">random</a>
+        <span class="sep">|</span>
+        <a href="https://BZHU404.github.io/Poison_map" target="_blank" rel="noopener">next &raquo;</a>
+      </nav>
+
+      <p class="page-end"><span class="dot">■</span> <a href="#main">Back to top</a> <span class="dot">■</span></p>
+
+    </main>
+  </div>
+
+  <footer class="sitefooter">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="blog.html">Weblog</a>
+      <a href="music.html">Music</a>
+      <a href="roulette.html">Game</a>
+      <a href="write.html">Writing desk</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://github.com/BZHU404" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="footer-sponsor">Brought to you by <b>coffee</b> and <b>bad ideas</b> · <a href="#support">Buy me a coffee</a></p>
+    <p class="footer-line">LAST UPDATED: 2026.11.12 &nbsp;|&nbsp; BEST VIEWED: NETSCAPE NAVIGATOR 3.0 / 1024 × 768 &nbsp;·&nbsp; <button class="truth-trigger" id="truthTrigger" type="button">See the truth</button></p>
+    <p class="footer-fine">Copyright © 2026 Brian. All Rights Reserved. 本页面由 Notepad 手工编写。<br>
+    <span class="construction blink">▲ 本站建设中 ▲</span></p>
+  </footer>
+
+</div>
+
+<section class="truth-page" id="truthPage" aria-label="Devil's Ravenstone" aria-hidden="true" hidden>
+  <div class="truth-wrap">
+    <header class="truth-top">
+      <span class="truth-signal"><span class="truth-led" aria-hidden="true"></span> SIGNAL: UNKNOWN</span>
+      <span class="truth-coords">N 00°00'00" / E 00°00'00"</span>
+      <span class="truth-clock" id="truthClock">--:--:--</span>
+    </header>
+
+    <p class="truth-kicker">A PAGE THAT SHOULD NOT BE INDEXED</p>
+    <div class="truth-head">
+      <div>
+        <h1 id="truthTitle" tabindex="-1">DEVIL'S<br>RAVENSTONE</h1>
+        <p class="truth-sub">There was never a workshop. Only a door.</p>
+      </div>
+      <div class="truth-eye-frame">
+        <img class="truth-eye" src="assets/TheCreepyEye.gif" alt="The ravenstone">
+        <span>IT IS AWAKE</span>
+      </div>
+    </div>
+
+    <div class="truth-rule" aria-hidden="true"></div>
+
+    <div class="truth-opening">
+      <p>You asked to see the truth. The workshop was a door. The door was a mouth.</p>
+      <p>I fix keyboards. I fix the small machines people use to talk to each other. I do not fix what answers.</p>
+      <p>If you are reading this, the link you followed was not a link. It was a pulse.</p>
+    </div>
+
+    <nav class="truth-nav" aria-label="Locked navigation">
+      <button type="button" data-truth-lock data-truth-say="THE DOOR: It is already open. You are inside.">THE DOOR</button>
+      <button type="button" data-truth-lock data-truth-say="THE LIST: Your name is not on it. That is worse.">THE LIST</button>
+      <button type="button" data-truth-lock data-truth-say="THE STATIC: It is not static. It is listening.">THE STATIC</button>
+      <button type="button" data-truth-lock data-truth-say="THE DEBT: You have always owed it.">THE DEBT</button>
+      <button type="button" data-truth-lock data-truth-say="NO EXIT: There is no exit. There is only a smaller room.">NO EXIT</button>
+    </nav>
+
+    <div class="truth-grid">
+      <article class="truth-card">
+        <p class="truth-index">01 / WHAT THIS IS</p>
+        <h2>NOT A PORTFOLIO</h2>
+        <p>This is residue. A list of things that were never meant to be found, left where the old web forgets to sweep.</p>
+      </article>
+      <article class="truth-card">
+        <p class="truth-index">02 / WHAT I DO</p>
+        <h2>SMALL MACHINES</h2>
+        <p>Keyboards, mice, dead ports, the little clicks that make people feel heard. The front room was always a cover. The rest of the house listened.</p>
+      </article>
+      <article class="truth-card">
+        <p class="truth-index">03 / THE RULES</p>
+        <h2>NO NAMES. NO FACES.</h2>
+        <p>If you see a door, do not knock. It has already seen you. If the screen goes dark, do not wait for it to come back.</p>
+      </article>
+      <article class="truth-card">
+        <p class="truth-index">04 / CONTACT</p>
+        <h2>LEAVE A MESSAGE</h2>
+        <p>You don't. Leave it in the static. If it answers, do not reply twice.</p>
+      </article>
+    </div>
+
+    <p class="truth-log" id="truthLog" role="status" aria-live="polite">SIGNAL: UNKNOWN. YOU ARE EARLY.</p>
+    <p class="truth-hint">NO EXIT. NO REFRESH. NO ONE IS COMING.</p>
+
+    <footer class="truth-footer">
+      <span>DEVIL'S RAVENSTONE / EST. BEFORE THE WEB</span>
+      <span class="truth-footer-mid">YOU ARE THE ONLY VISITOR</span>
+      <button class="truth-forget" id="truthForget" type="button">forget</button>
+    </footer>
+  </div>
+</section>
+
+<span id="psychHome" hidden></span>
+
+<script src="posts.js"></script>
+<script src="blog.js"></script>
+<script src="site.js"></script>
+<script src="truth.js"></script>
+<script src="psych.js"></script>
+</body>
+</html>
